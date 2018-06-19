@@ -1,0 +1,10 @@
+java JDK - OK	environnement de dev java
+eclipse - OK	ide java
+7zip - OK
+nodejs - OK		environnement de dev javascript
+vscode - OK		ide javascript
+xampp - OK		base de donnee + serveur web pour requetter
+staruml - OK 	modelisation UML (diagrammes)
+git + smartgit - OK	 	gestion de source + client graphique(opt)
+pyhton 3.6 - OK 	langage python et interpreteur
+maven - OK 		build system pour java

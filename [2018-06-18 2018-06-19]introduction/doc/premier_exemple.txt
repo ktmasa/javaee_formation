@@ -1,0 +1,45 @@
+
+base de donnee chargée du stockage
+	-> mysql (3306)
+	
+application (spring boot)
+	-> spring : configuration et boite a outils javaee
+				-> automatiquement de lancer un serveur web
+
+	on veut se connecter a la base mysql	
+		driver mysql -> pom.xml (spring starter)
+		
+	grace a cela, on peut definir dans spring une dataSource
+	datasource -> BDD dans mysql
+	
+on veut qu'il fasse automatiquement la correspondance entre
+	objet metier <---> table BDD
+	JPA + hibernate
+	Java Persistence Api
+	librairie chargé de transcrire les objets en SQL
+	
+-> on configure hibernate dans le fichier properties (mysql5, update)
+chaque objet metier a sauvegarder/gérer est annoté avec @Entity
+
+automatiquement, comme on lui a indiquer "update", il va creer la 
+table correpsondante si elle n'existe pas
+	nom de l'objet metier
+	
+on veut pouvoir acceder au livres via une api rest
+	-> gestion du web (ajout du starter)
+		requette http, serialisation json (via jackson)
+						java <-> json
+	-> rest repositories
+		exposer un service d'acces au metier via REST
+
+si on creer une interface héritant de PagingAndS....
+elle sera automatiquement détecter
+et publiée comme api REST avec a l'interieur
+	toutes les operations CRUD de base
+
+		
+		
+
+
+
+

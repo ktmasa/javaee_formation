@@ -1,0 +1,90 @@
+systeme informatique distribué + fil rouge (2 jours)
+	- introduction/installation
+	- architecture SOA (service oriented architecture)
+	- projet fil rouge (loncoto)
+
+algorithmique (3jours)
+	- introduction aux alogorithmes
+	- variable, types, structure confitionelle
+	- boucle, fonction
+	- structure de données (tableau, liste, arbre, etc...)
+	langage scripting simple
+
+base de donnée sql (3 jours)
+	- langage sql
+	- table, relations, etc
+	- exemple avec mysql/mariadb
+	- introduction nosql
+	- exemple avec mongodb
+
+Architecture d'application ( jour)
+	- poussser un peu SOA
+
+Conception orienté objet ( jours)
+	- introduction des concepts objets
+	- classe, heritage, surcharge...
+	- UML (unified modeling langage)
+	- design pattern
+	
+Présentation des outils de developpement (3 jours)
+	- gestion de source (GIT)
+	- build systeme (maven)
+	- tests, etc...
+	
+--------------------------------
+continuitée dans les acquis
+--------------------------------
+HTML/CSS/javascript (5 jours)
+	- code html et css
+	- developpement javascript
+	- jquery
+	- html5, etc
+	
+API REST/JSON (2 jours)
+	- architecture
+	- consommation et structure des api rest/json
+
+Angular (5/6) (4 jours)
+	- typescript
+	- npm/nodejs
+	- angular-cli, framework angular-cli
+
+---------------------------------------
+module central
+---------------------------------------
+java 8 (10 jours)
+	- fondamentaux du langage
+	- objet en java
+	- java coté serveur
+	- accès au base de données
+	- programmation multi-thread
+	- test/junit
+	- regex, lecture de fichier, IO
+	- etc...
+	
+java EE spring mvc/jpa (7 jours)
+	- java ee (enterprise edition)
+	- application web en java
+	- spring et jpa
+	- framework spring est une librairie d'injection de dépendance et AOP
+		- sur cette base spring, de multiples modules sont fournis
+		- spring MVC -> framework web
+		- spring security -> gestion authentification/securite
+		- spring batch -> traitement par lots
+		- spring orm (JPA)
+		- spring data (api rest automatique et repositories)
+	- JPA : java persistence api
+		- jpa est une api de sauvegarde d'objet en BDD
+			ORM -> object relational mapping
+			- hibernate
+	- jax-rs (web services)
+	
+------
+GED 1 et 2 (10 jours)
+
+restitution projet fil rouge (2 jours)
+
+
+	
+	
+	

@@ -1,0 +1,24 @@
+groupes projet fil rouge:
+
+groupe A:
+	- laurent
+	- steve
+	- kévin
+	
+groupe B:
+	- masataka
+	- nicolas
+	- magda
+	
+groupe C:
+	- olivier
+	- karima
+	- rachid
+	
+groupe D:
+	- francois
+	- nabil
+	- anive gervais
+	
+	
+

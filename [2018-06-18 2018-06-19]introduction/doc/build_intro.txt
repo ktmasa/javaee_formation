@@ -1,0 +1,13 @@
+Build system
+	- > compiler/packager les logiciels a la main
+	très vite très laborieux (centaines de fichiers)
+	automatiser cette étape
+	
+	exemple en java
+		-> historique : ant
+				ensemble de script et taches a executer pour "compiler/packager" le logiciel
+		-> actuellement : maven
+				gestion des dépendances et du versionning
+				pom.xml -> description du projet
+	fichier source -> compiler -> TESTER -> packaging -> deployer/publier
+	

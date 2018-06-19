@@ -1,0 +1,45 @@
+conteneur/ docker
+------------------
+
+code source -> build system -> livrable (executable, fichier jar, etc...)
+
+votre logiciel a besoin d'un environnement spécifique pour fonctionner
+correctement:
+	- certaine version de java
+	- certains outils : geographique, traitement image, base de données
+	- configuration spécifique de systeme d'exploitation
+	
+role des administrateurs systeme (ou autre variation)
+de s'occuper de fournir l'environnement adéquat a l'application
+-> documentation/specification de l'environnement
+	processus "manuel" par des etres humains
+	
+automatiser cet environnement et de l'isoler de la machine physique
+docker
+	un fichier qui décrit comment construire l'image systeme
+	de votre environnement et ce qu'il faut mettre dedans
+	-> Dockerfile
+	(optimisations pour eviter de dupliquer inutilement les fichiers/etc)
+	
+systeme d'exploitation (linux) <--- docker ---> image(application)
+										   ----> image2 (app2)
+docker gere sont propre réseaux virtuel
+-> docker hub (depot d'image docker)
+
+de plus en plus d'entreprise n'on pas besoin de gérer elle-même leur data center
+ou infrastructure serveur
+	-> amazon (aws)
+	-> google (google compute engine)
+	-> microsoft (azure)
+		-> accepte le déploiement d'images type docker
+
+autre avantage enorme:
+	une configuration/image spécifiée intégralement et reproductible
+	
+	
+
+
+	
+
+
+
