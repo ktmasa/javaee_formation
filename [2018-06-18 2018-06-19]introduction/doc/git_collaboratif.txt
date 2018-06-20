@@ -1,0 +1,76 @@
+Git collaboratif
+
+-------------------
+1 personne qui est le mainteneur du dépot "maitre/original"
+
+cette personne (M) va creer le depot sur github
+et ensuite le cloner sur sa machine de travail
+
+sur ce depot, la branche master représentera l'avancé du projet
+avec les contributions des autres participant
+
+son clone a donc pour origine le github(M)
+
+------------------------------
+les participants se loggue sur leur compte github, puis
+vont sur le dépot du mainteneur (M)
+et la fork sont depot dans leur propre github
+chaque participant a donc le même d"pot dans son github individuel
+
+meme principe que pour (M) ils clone leur dépot forké sur
+leur machine de travail
+
+P1 clone ---> github(p1)/projet   Origin
+P2 clone ---> github(p2)/projet	  Origin
+
+-------------------------------
+pour qu'un participant récupere les dernieres modification
+en provenance du depot maitre/original
+
+il va creer un remote "upstream" en fetch uniquement vers le github
+du depot maitre
+P1/projet ---> origin ---> github(p1)/projet
+			   upstream -> github(M)/projet
+
+le P se place sur la branche "master"
+il fait un pull... depuis "upstream"
+		'tous les commit son récupéré'
+il fait un push de master vers origin
+		don github est à jour
+	
+--------------------------------
+pour qu'un participant pousse ses modifications vers le depot maitre
+
+vous ne travaillez JAMAIS directement dans la branche master
+vous creez localement une nouvelle branche pour travailler dedans
+switch -> new branch -> "nom branche"
+eclipse vous indique à tout moment sur quelle branche vous etes
+
+vous travaillez et faites vos commit dans votre branche
+vous pouvez, a intervalle régulier, pusher cette branche vers votre github (origin)
+
+Quand vous voulez que le mainteneur réintegre vos modifications au dépot
+maitre et à la branche master
+
+vous allez sur l'interface github, sur votre branche et creer une
+nouvelle pull request vers la branche master du mainteneur
+
+une fois la pull request acceptée par le mainteneur
+
+vous pouvez mettre a jour votre propre master en basculant sur cette
+branche et en pullant depuis upstream
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
