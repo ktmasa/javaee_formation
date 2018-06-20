@@ -1,0 +1,57 @@
+bas niveau
+
+assembleur  (instruction machine)
+	-> acces direct a des cases memoires
+	
+pour faciliter le travail "humain"
+langage plus evolué
+	-> variable : en quelque sorte une case mémoire nommée
+
+nom_variable = valeur;
+
+comme le nom l'indique, le contenu d'une variable peut changer
+suivant les langages, les variables peuvent etre typées
+par exemple, un nombre, ou du texte
+certains langage sont à typage faible
+comme par exemple le python
+la variable n'a pas de type prédéfini, mais prend simplement le type
+correspondant a la valeur à l'intérieur
+a = 15
+type(a) -> int
+ce n'est pas recommandé de changer le type d'une variable
+
+typage fort, ou le type de la variable est fixé à sa déclaration ou
+a sa premiere affectation
+
+les principaux types
+int -> entier : a = 5
+float -> virgule flottante : f1 = 2.54
+bool -> boolean : True|False (vrai ou faux)
+
+b1 		b2		b1 OR b2
+-----------------------
+1 		0			1
+0 		1			1
+1 		1			1
+0 		0			0
+
+b1 		b2		b1 and b2
+-----------------------
+1 		0			0
+0 		1			0
+1 		1			1
+0 		0			0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

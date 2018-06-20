@@ -1,0 +1,42 @@
+exercices algorithmique (python)
+-----------------------------------
+
+exercice 1
+-----------
+demander une valeur entiere à l'utilisateur
+afficher tous les nombres paires de 0 à cette valeur
+
+exercice 2
+-----------
+demander à l'utilisateur un nombre de notes a saisir
+saisir toutes les notes (float)
+afficher:
+	la moyenne
+	la plus petite note
+	la plus grande note
+
+bonus: eviter la saisie de note invalide (negative ou > 20)
+
+exercice 3
+-----------
+demander une taille entiere positive à l'utilisateur
+afficher un triangle en caractere de la taille choisie
+
+exemple:
+	si l'utilisateur à saisie 5
+	
+*****
+*--*
+*-*
+**
+*
+
+bonus:
+afficher un losange
+  *
+ *-*
+*---*
+ *-*
+  *
+  
+
