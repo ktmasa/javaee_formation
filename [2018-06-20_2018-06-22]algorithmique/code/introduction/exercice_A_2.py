@@ -21,3 +21,5 @@ print("moyenne = ", total / compteur_note)
 print("max = ", max_note)
 print("min = ", min_note)
 
+#print("hoho", end="")
+#print("hoho")
