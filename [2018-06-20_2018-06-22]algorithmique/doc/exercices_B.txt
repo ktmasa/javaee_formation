@@ -1,0 +1,63 @@
+exercice algorithme B
+------------------------
+
+exercice 1 (debutant)
+-------------------
+
+ecrire une fonction chercheMax qui prend 3 valeur en parametre
+et renvoie la plus grand des 3
+
+	chercheMax(5, 18, 9) --> 18
+
+exercice 2 (debutant)
+--------------------
+ecrire une fonction prixHT qui prend un prix TTC en parametre
+et renvoie le prix HT. Il y a un argument otionnele "taux" qui
+par defaut est a 0.2
+
+	prixHT(120) -> 100
+	prixHT(105, 0.05) -> 100
+	
+exercice 3 (debutant)
+----------------------
+ecrire une fonction qui compte le nombre de chiffre impaire
+dans un tableau de chiffre
+
+	compteImpaire([1, 3, 4, 6, 9]) -> 3
+	compteImpaire([2, 10, 20, 5, 12]) -> 1
+	
+exercice 4 (moyen)
+----------------------
+ecrire une fonction qui indique si une chaine de caractere est
+un palindrome
+	estPalindrome("kayak") -> True
+	estPalindrome("java") -> False
+	
+si possible sans utiliser "reverse"
+
+exercice 5 (moyen)
+----------------------
+ecrire une fonction qui calcul la durée nécéssaire en année (entiere)
+pour atteindre une certaine somme avec une somme intiale, et un taux
+d'interet
+					somme  taux  but -> annees
+	anneeNecessaire(1000, 5.0, 2000) -> 12
+	
+exercice 6 (moyen/dur)
+----------------------
+ecrire une fonction qui prend un texte en parametre
+et renvoie:
+	moyen: la proportion de chaque voyelle par rapport au nombre
+de voyelle totale
+	dur: compte le nombre de mots (separé par espace, ponctuation)
+	
+exercice 7 (dur)
+---------------------
+ecrire une fonction qui prend en parametre un nombre entre 1 et 999
+et qui renvoie son ecriture romaine
+	chiffreRomain(125) -> CXXV
+	chiffreRomain(99) -> XCIX
+	
+
+
+
