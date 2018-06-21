@@ -1,0 +1,41 @@
+demande annee : 2018
+demande mois:	6
+
+------------------------------
+      juin 2018
+------------------------------
+LUN MAR MER JEU VEN SAM DIM
+                  1   2   3
+  4   5   6   7   8   9  10
+ 11  12  13  14  15  16  17
+ 18  19  20  21  22  23  24
+ 25  26  27  28  29  30 
+
+ 
+ -> nom du mois
+ -> nbJoursdansMois: <- numero du mois, annee
+ -> estbissextile
+ -> jour de debut du mois
+ 
+ 
+ calendrier(mois, annee)
+	|
+	+-----> EnTete(mois, annee)
+	|			|
+	|			+------> getNomMois(mois)
+	|
+	+-----> Corps(mois, annee)
+			  |
+			  +----> nbJoursMois(mois, annee)
+			  |				|
+			  |				+------> estBissextile(annee)
+			  |
+			  +----> jourDebut(mois, annee)
+			  
+
+
+
+
+
+
+				
