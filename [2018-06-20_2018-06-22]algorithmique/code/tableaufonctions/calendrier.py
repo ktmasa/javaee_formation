@@ -1,14 +1,19 @@
 def calendrier(mois, annee):
-    pass
+    enTete(mois, annee)
+    corps(mois, annee)
 
 def enTete(mois, annee):
-    pass
+    print("-----------------------------")
+    #bonus, centrer le texte
+    print("      ", getNomMois(mois), str(annee))
+    print("-----------------------------")
+    print(" LUN MAR MER JEU VEN SAM DIM")
 
 def corps(mois, annee):
     pass
 
 def getNomMois(mois):
-    pass
+    return ""
 
 def estBissextile(annee):
     pass
@@ -22,3 +27,4 @@ def jourDebutMois(mois, annee):
 
 annee = int(input("annee (apres 1800): "))
 mois = int(input("mois de 1 à 12: "))
+calendrier(mois, annee)
