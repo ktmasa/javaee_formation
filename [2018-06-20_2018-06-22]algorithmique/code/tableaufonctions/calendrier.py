@@ -3,23 +3,33 @@ def calendrier(mois, annee):
     corps(mois, annee)
 
 def enTete(mois, annee):
-    print("-----------------------------")
+    chaine = "-----------------------------"
+    print(chaine)
     #bonus, centrer le texte
-    print("      ", getNomMois(mois), str(annee))
-    print("-----------------------------")
+    texte = getNomMois(mois) + " " + str(annee)
+    print(" " * ((len(chaine) - len(texte)) // 2), texte)
+    print(chaine)
     print(" LUN MAR MER JEU VEN SAM DIM")
 
 def corps(mois, annee):
-    pass
+    print(estBissextile(annee))
+    print(nbJoursMois(mois, annee))
 
 def getNomMois(mois):
-    return ""
+    noms = ["janvier", "fevrier", "mars", "avril", "mai", "juin",
+            "juillet", "aout", "septembre", "octobre", "novembre", "decembre"]
+    if (mois < 1 or mois > 12):
+        return "inconnu"
+    return noms[mois - 1]
 
+# True si bissextile
+# tous les 4 ans, sauf les siecles, mais quand même tous les 400 ans
 def estBissextile(annee):
-    pass
-
+    return False
+    
+# renvoyer le nombre de jours du mois
 def nbJoursMois(mois, annee):
-    pass
+    return 0
 
 def jourDebutMois(mois, annee):
     pass
