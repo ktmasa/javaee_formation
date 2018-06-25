@@ -1,0 +1,52 @@
+SELECT 	`produit`.`id` AS `pid`,
+		`produit`.`nom`,
+        `produit`.`categorieId`,
+        `categorie`.`id` AS `cid`,
+        `categorie`.`libelle`
+        FROM `produit`, `categorie`
+        WHERE `produit`.`categorieId` = `categorie`.`id`
+		
+Join pour faire des jointure
+
+SELECT 	`produit`.`id` AS `pid`,
+		`produit`.`nom`,
+        `produit`.`categorieId`,
+        `categorie`.`id` AS `cid`,
+        `categorie`.`libelle`
+        FROM `produit` JOIN `categorie`
+        ON `produit`.`categorieId` = `categorie`.`id`
+		
+par defaut, Join est un INNER JOIN en MYSQL
+c.a.d qu'il ne garde que les lignes qui on un produit et une categorie associé
+
+le left join, lui, garde les lignes de la tbale à gauche de la jointure
+même s'il ne trouve pas de ligne associée dans la table à droite de la jointure
+les colonnes correpsondantes sont alors mise à NULL dans le résultat
+
+SELECT 	`produit`.`id` AS `pid`,
+		`produit`.`nom`,
+        `produit`.`categorieId`,
+        `categorie`.`id` AS `cid`,
+        `categorie`.`libelle`
+        FROM `produit` LEFT JOIN `categorie`
+        ON `produit`.`categorieId` = `categorie`.`id`
+		
+		
+le Right join  est le symmétrique du left join, il ajoutera une ligne
+avec les colonne de latable a gauche vide s'il reste une ou plusieurs ligne
+de la colonne de droite sans ligne de la table de gauche associé
+
+SELECT 	`produit`.`id` AS `pid`,
+		`produit`.`nom`,
+        `produit`.`categorieId`,
+        `categorie`.`id` AS `cid`,
+        `categorie`.`libelle`
+        FROM `produit` RIGHT JOIN `categorie`
+        ON `produit`.`categorieId` = `categorie`.`id`
+
+exemple avec table de jointure et double jointure n-n
+SELECT `article`.`titre`, `tag`.`libelle` 
+	FROM `article` 
+	JOIN `tag_article` ON `article`.`id` = `tag_article`.`articleId`
+    JOIN `tag` ON `tag_article`.`tagId` = `tag`.`id`
+		
