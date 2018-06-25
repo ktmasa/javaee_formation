@@ -1,0 +1,62 @@
+
+collection (liste)
+	[15, 10, 3, 7, 20, 8, 6]
+
+si je recherche un élément dans le tableau/liste
+	ca va me prendre jusqu'a 7 operations, au pire, et une operation au mieux
+	
+dimensions/taille/volume des données en entrée est noté N en algorithmique
+
+cette recherche sequentielle a une complexité qui représente la difficulté a calculer
+le résultat, en gros une estimation du nombre d'operation a faire pour arriver au bout
+
+en meilleure cas O(1)
+en pire cas  	 O(N)
+en cas moyen	 O(N/2)
+
+O(N^2)
+O(log(N))
+....
+O(N!)
+
+cela permet d'estimer a quelle vitesse croit le temps d'execution en fonction du
+volume de données
+
+par exemple
+O(log(N)) croit très peut avec la volumetrie des données (idéal)
+O(sqrt(N)) un peut moins bien mais assez intéréssant
+O(N) -> croit linéairement avec les données
+O(N*log(N)) -> croit un peu plus vite que linéairemnt
+O(2*N)
+O(N^2) -> croit exponentiellement
+O(N!)
+
+recherche binaire/dichotomique
+
+[2,4 ............20,22............58]
+ ^								   ^
+ debut							  fin
+ 
+[2,4 ............20,22............58]
+ ^				  ^				   ^
+ debut			 millieu		  fin
+ 
+[2,4 ..........19,20,22...........58]
+ ^			    ^				 
+ debut			fin
+ 
+[2,4 ....10.....19,20,22...........58]
+ ^		  ^	    ^				 
+ debut	millieu fin
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+

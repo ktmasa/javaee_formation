@@ -1,0 +1,68 @@
+SELECT [colonne1, colonne3....] ou *
+	FROM [nom table]
+	
+SELECT `nom`, `prenom` FROM `client`
+SELECT `nom` as `patronyme`, 25 as `age` FROM `client`
+
+la clause WHERE permet de filtrer les lignes renvoyées en fonction
+d'une ou plusieurs conditions
+SELECT `nom` as `patronyme`, 25 as `age` FROM `client` WHERE `id`=1
+
+on peut préciser de quelle table provient la colonne, ou de quelle
+base provient la table requéttée
+SELECT `client`.`nom` as `patronyme`, 25 as `age` 
+	FROM `base_etape1`.`client` WHERE `id`=1
+	
+SELECT `client`.* as `patronyme`, 25 as `age` 
+	FROM `base_etape1`.`client` WHERE `id`=1
+	
+SELECT `client`.*, 25 as `age` 
+	FROM `base_etape1`.`client` WHERE `id`=1
+	
+SELECT * FROM `produit` WHERE `prix` > 100.0
+
+SELECT * FROM `produit` WHERE `createdAt` > '2018-01-01' AND `prix` < 100
+
+uniquement les lignes sans valeur pour createdAt
+SELECT * FROM `produit` WHERE `createdAt` IS NULL
+
+et inversement uniquement ceux qui on une valeur renseignée
+SELECT * FROM `produit` WHERE `createdAt` IS NOT NULL
+
+SELECT * FROM `produit` WHERE `libelle` LIKE '%or%'
+SELECT * FROM `produit` WHERE `libelle` NOT LIKE '%ri%'
+
+
+SELECT * FROM `produit` WHERE `id` != 1
+SELECT * FROM `produit` WHERE `id` <> 1
+
+SELECT 	`id`,
+		`libelle`,
+        `prix` * 1.2 as `prixTTC`,
+        `poids`
+        FROM `produit`
+		
+SELECT 	`id`,
+		`libelle`,
+        `prix` * 1.2 as `prixTTC`,
+        `poids`,
+        `prix` * 1.2 + `poids` * 10.0 as `prix_avec_livraison` 
+        FROM `produit`
+		
+SELECT 	`id`,
+		`libelle`,
+        `prix` * 1.2 as `prixTTC`,
+        `poids`,
+        `prix` * 1.2 + `poids` * 10.0 as `prix_avec_livraison` 
+        FROM `produit`
+        WHERE `prix` * 1.2 > 100
+		
+SELECT * FROM `produit` ORDER BY `prix` DESC
+
+tri par nom (par ordre alphabetique), puis si le nom est egal,
+ par prénom (en ordre inverse)
+SELECT * FROM `client` ORDER BY `nom` ASC, `prenom` DESC
+
+
+
+

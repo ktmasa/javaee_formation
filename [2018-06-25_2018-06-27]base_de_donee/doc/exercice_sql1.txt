@@ -1,0 +1,26 @@
+exercice SQL 1
+-----------------------
+creer une table intervention
+
+une clé primaire id (int)
+un champs description (decrit l'intervention, 200 caractere)
+un codeMateriel (texte sur 20 caractere)
+un nom intervenant (sur 100 caracteres)
+une datePlanifie (DateTime)
+une dateRealisation (DateTime) -> peut être null
+une duree (smallint) -> nombre de minutes de l'intervention (par defaut 60)
+
+A) creer la table
+B) remplir avec entre 5 et 10 interventions
+C) requettes
+	- lister les interventions
+	- lister les interventions avec uniquement le codeMateriel et la datePlanifiée
+	- idem, mais uniquement si elle n'est pas encore réalisée
+	- lister toutes les intervention d'un intervenant choisi, trié pare datePlanifiée
+	- lister les interventions après une date spécifiée, trié par materiel, puis par
+	datePlanifiée
+	- idem en ne prenant que les intervention de plus d'une heur de durée
+	- faire une recherche dans la description pour lister les interventions
+		par exemple, toutes les intervention avec terme "panne electrique" dans description
+		
+	
