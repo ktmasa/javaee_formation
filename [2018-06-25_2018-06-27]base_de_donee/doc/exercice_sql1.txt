@@ -19,7 +19,7 @@ C) requettes
 	- lister toutes les intervention d'un intervenant choisi, trié pare datePlanifiée
 	- lister les interventions après une date spécifiée, trié par materiel, puis par
 	datePlanifiée
-	- idem en ne prenant que les intervention de plus d'une heur de durée
+	- idem en ne prenant que les intervention de plus d'une heure de durée
 	- faire une recherche dans la description pour lister les interventions
 		par exemple, toutes les intervention avec terme "panne electrique" dans description
 		
