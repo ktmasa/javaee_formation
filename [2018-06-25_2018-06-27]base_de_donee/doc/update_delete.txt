@@ -1,0 +1,8 @@
+mise a jour
+
+UPDATE `employee` SET `salaire`=2000 WHERE `id_employee`=2
+UPDATE `employee` SET `salaire`=`salaire`*1.1 WHERE `id_poste`=3
+
+effacement
+DELETE FROM `employee` WHERE `id_employee`=6
+DELETE FROM `employee` WHERE `id_employee`=11
