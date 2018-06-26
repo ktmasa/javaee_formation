@@ -1,0 +1,70 @@
+exemple de count
+SELECT COUNT(`employee`.`id_employee`) AS NB_EMPLOYE
+		FROM `employee`
+		
+COUNT compte tout simplement le nombre de ligne/valeurs
+ici, décompte des employes
+
+SELECT COUNT(`employee`.`id_employee`) AS NB_EMPLOYE
+		FROM `employee`
+        WHERE `employee`.`salaire` > 2500
+		
+ici, compter les employer dont le salaire est supérieur à 2500
+
+SUM fait la somme de la valeur cumullée sur toutes les lignes
+
+SELECT SUM(`employee`.`salaire`) AS MASSE_SALARIALE
+		FROM `employee`
+		
+	min -> renvoie le minimum
+SELECT MIN(`employee`.`salaire`) AS SALAIRE_MIN
+		FROM `employee`
+		
+	max -> renvoie le maximum
+SELECT MAX(`employee`.`salaire`) AS SALAIRE_MAX
+		FROM `employee`
+		
+SELECT AVG(`employee`.`salaire`) AS SALAIRE_MOYEN
+		FROM `employee`
+
+	moyenne aggrégée par poste
+SELECT 	AVG(`employee`.`salaire`) AS SALAIRE_MOYEN,
+		`poste`.`nom_poste`
+	FROM `employee`
+    JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+    GROUP BY `poste`.`nom_poste`
+	
+on peut filtrer les lignes avant aggregation
+SELECT 	AVG(`employee`.`salaire`) AS SALAIRE_MOYEN,
+		`poste`.`nom_poste`
+	FROM `employee`
+    JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+    WHERE `employee`.`salaire` < 10000
+    GROUP BY `poste`.`nom_poste`
+	
+having est un "where" POST aggregation, qui travaille donc sur les
+valeurs calculée par les fonctions d'aggregation
+
+SELECT 	AVG(`employee`.`salaire`) AS SALAIRE_MOYEN,
+		`poste`.`nom_poste`
+	FROM `employee`
+    JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+    GROUP BY `poste`.`nom_poste`
+    HAVING AVG(`employee`.`salaire`) > 2000
+	
+compter les employe par poste
+
+SELECT 	COUNT(`employee`.`id_employee`) AS NB_EMPLOYE,
+		`poste`.`nom_poste`
+	FROM `employee`
+    JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+    GROUP BY `poste`.`nom_poste`
+	
+
+SELECT 	COUNT(`employee`.`id_employee`) AS NB_EMPLOYE,
+		`pays`.`nom_pays`
+	FROM `employee`
+    JOIN `service` ON `service`.`id_service` = `employee`.`id_service`
+    JOIN `emplacement` ON `service`.`id_emplacement` = `emplacement`.`id_emplacement`
+    JOIN `pays` ON `emplacement`.`id_pays` = `pays`.`id_pays`
+    GROUP BY `pays`.`nom_pays`

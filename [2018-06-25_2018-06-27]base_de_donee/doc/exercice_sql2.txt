@@ -17,3 +17,44 @@ requettage dans la base société
 	- lister les nom et prenom des employés et leur différence de salaire
 	par rapport au salaire max et min de leur poste
 	
+correction
+
+SELECT `nom`,`prenom`,`salaire` FROM `employee` 
+	WHERE `salaire` > 2500
+	
+SELECT `nom`,`prenom`,`salaire` FROM `employee` 
+	WHERE `salaire` > 2500 AND `id_service`=2
+	
+SELECT `nom`,`prenom`,`salaire` FROM `employee` 
+	WHERE `salaire` > 2500
+    ORDER BY `salaire` DESC
+	
+SELECT `nom`,
+		`prenom`,
+        `salaire`,
+        `poste`.`nom_poste`,
+        `service`.`nom_service`
+	FROM `employee`
+	JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+    JOIN `service` ON `employee`.`id_service` = `service`.`id_service`
+
+SELECT `nom`,
+		`prenom`,
+        `employee`.`date_embauche`,
+        `service`.`nom_service`
+	FROM `employee`
+    JOIN `service` ON `employee`.`id_service` = `service`.`id_service`
+    JOIN `emplacement` ON `service`.`id_emplacement` = `emplacement`.`id_emplacement`
+    JOIN `pays` ON `emplacement`.`id_pays` = `pays`.`id_pays`
+    WHERE `pays`.`nom_pays` = "France"
+	
+SELECT `nom`,
+		`prenom`,
+        `employee`.`date_embauche`,
+        `employee`.`salaire`,
+        `poste`.`nom_poste`,
+        `employee`.`salaire` - `poste`.`salaire_min` AS DIFF_MIN,
+        `poste`.`salaire_max` - `employee`.`salaire` AS DIFF_MAX
+	FROM `employee`
+    JOIN `poste` ON `employee`.`id_poste` = `poste`.`id_poste`
+	

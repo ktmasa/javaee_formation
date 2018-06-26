@@ -1,0 +1,39 @@
+lister les types de poste (nom_poste) et le % du salaire_min par rapport
+au total des salaire_min
+
+lister les types de poste (nom_poste) et le % d'employés qui ont ce poste
+
+inspiration:
+SELECT 	`employee`.`nom`,
+		`employee`.`salaire`, 
+        `employee`.`salaire` * 100 
+        	/ (SELECT SUM(`employee`.`salaire`)FROM `employee`) 
+        		as Fraction_Salaire
+	FROM `employee`
+	
+	
+correction A
+SELECT 	`poste`.`nom_poste`,
+		`poste`.`salaire_min`, 
+        `poste`.`salaire_min` * 100 
+        	/ (SELECT SUM(`poste`.`salaire_min`)FROM `poste`) 
+        		as Fraction_poste_salaire_min
+	FROM `poste`
+	
+SELECT 	`poste`.`nom_poste`,
+		count(`employee`.`id_employee`) as nb_emp,
+        (select count(`employee`.`id_employee`) FROM `employee`) as total_emp
+	FROM `poste`
+    JOIN `employee`
+    ON `poste`.`id_poste` = `employee`.`id_poste`
+    GROUP BY `poste`.`nom_poste`
+
+SELECT 	`poste`.`nom_poste`,
+		count(`employee`.`id_employee`) * 100 /
+        (select count(`employee`.`id_employee`) FROM `employee`) as proportion_emp
+	FROM `poste`
+    JOIN `employee`
+    ON `poste`.`id_poste` = `employee`.`id_poste`
+    GROUP BY `poste`.`nom_poste`
+	
+	
