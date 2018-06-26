@@ -1,0 +1,19 @@
+exercice sql 2
+---------------------
+
+requettage dans la base société
+
+	- lister le nom, prénom et salaire des salarié dont le salaire est 
+	supérieur a 2500
+	- lister le nom, prénom et salaire des salarié dont le salaire est 
+	supérieur a 2500 et qui travaille au service comptabilité
+	- lister ces mêmes employée par ordre de salaire décroissant
+	
+	
+	- lister les nom, prenom, salaire des employés avec le nom de leur poste,
+	et le nom du service ou ils travaillent
+	- lister les noms, prenom et date d'embauche des employés travaillant
+	en france
+	- lister les nom et prenom des employés et leur différence de salaire
+	par rapport au salaire max et min de leur poste
+	
