@@ -44,6 +44,20 @@ SELECT 	`produit`.`id` AS `pid`,
         FROM `produit` RIGHT JOIN `categorie`
         ON `produit`.`categorieId` = `categorie`.`id`
 
+exemple de jointure "self", ou auto join
+dans ce cas, nous somme obligé de renommer la table vers laquelle on fait le join
+vu que c'est la même que celle d'origine
+SELECT `employe`.`nom`,
+		`employe`.`email`,
+        `employe`.`managerId`,
+        `manager`.`id` AS `id manager`,
+        `manager`.`nom` AS `nom manager`
+        FROM `employe`
+        LEFT JOIN `employe` AS `manager`
+        ON `employe`.`managerId` = `manager`.`id`		
+		
+		
+		
 exemple avec table de jointure et double jointure n-n
 SELECT `article`.`titre`, `tag`.`libelle` 
 	FROM `article` 

@@ -1,0 +1,79 @@
+SELECT 	`article`.`titre`, 
+		`article`.`id`,
+        `tag_article`.`articleId` AS `jointable_articleId`,         
+        `tag_article`.`tagId` AS `jointable_tagid` 
+	FROM `article` 
+	JOIN `tag_article` ON `article`.`id` = `tag_article`.`articleId`
+	
+	SELECT 	`article`.`titre`, 
+		`article`.`id`,
+        `tag_article`.`articleId` AS `jointable_articleId`,         
+        `tag_article`.`tagId` AS `jointable_tagid`,
+        `tag`.`libelle`
+	FROM `article` 
+	JOIN `tag_article` ON `article`.`id` = `tag_article`.`articleId`
+    JOIN `tag` ON `tag_article`.`tagId` =  `tag`.`id`
+	
+	
+CREATE TABLE tag (
+    id int(11) NOT NULL AUTO_INCREMENT,
+    libelle VARCHAR(100) DEFAULT NULL,
+    PRIMARY KEY(id)
+    ) ENGINE=INNODB
+	
+	
+INSERT INTO `pays`
+	(`nom_pays`)
+	VALUES
+    ('France'),
+    ('Roumanie'),
+    ('Japon')
+	
+INSERT INTO `poste`
+	(`nom_poste`, `salaire_min`,`salaire_max`)
+    VALUES
+    ('Commercial', 1200, 3200),
+    ('Comptable', 1600, 2600),
+    ('Informaticien', 1200, 2800),
+    ('Reponsable', 3000, 6500),
+    ('PDG', 7000, 15000)
+	
+INSERT INTO 
+	`emplacement`(`rue`, `code_postal`, `ville`, `id_pays`)
+    VALUES 
+    ("152 avenue malakoff","75016","paris",1),
+    ("2 rue de la formation","75014","paris",1),
+    ("3 rue des chocolatines","31400","toulouse",1),
+    ("3 rue des maths","55630","bucarest",2),
+    ("15 rue du ninja","21155","osaka",3)
+    
+   
+   INSERT INTO `service`
+	(`nom_service`, `id_emplacement`) 
+    VALUES 
+    ('DG', 1),
+    ('comptabilité', 1),
+    ('commercial IDF', 2),
+    ('commercial SUD OUEST', 3),
+    ('infrastructure', 4),
+    ('veille technologique', 5),
+    ('commercial International', 5)
+    
+
+INSERT INTO 
+	`employee`(`nom`, `prenom`, `email`, `id_poste`, `date_embauche`, `id_manager`, `salaire`, `id_service`)
+    VALUES 
+    ('Onyme', 'Anne', 'a.onyme@lct.fr', 4, '2005-01-01', 1, 1800, 1),
+  ('Ochon', 'Paul', 'p.ochon@lct.fr', 4, '2011-01-01', 1, 4600, 2)  
+    
+INSERT INTO 
+	`employee`(`nom`, `prenom`, `email`, `id_poste`, `date_embauche`, `id_manager`, `salaire`, `id_service`)
+    VALUES 
+    ('Fonfec', 'Sophie', 's.fonfec@lct.fr', 1, '2005-01-01', 2, 2600, 4),
+  ('Bon', 'Jean', 'j.bon@lct.fr', 4, '2014-01-01', 1, 5200, 4),
+  ('Terieur', 'Alex', 'a.terieur@lct.fr', 1, '2012-01-01', 2, 1200, 5)
+ 
+    
+	
+	
+	
