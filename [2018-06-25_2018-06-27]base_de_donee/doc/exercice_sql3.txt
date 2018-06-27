@@ -24,8 +24,98 @@ particulier
 11) lister les etudiants assistant a au moins un cours dans 2 matiere précisé
 	exemple: etudiant qui suivent java et opera
 	
+--------------------------------------------
+1)
+
+SELECT `cours`.`id`,
+		`cours`.`libelle`,
+        `professeur`.`nom` AS `nom professeur`,
+        `matiere`.`libelle` AS `libelle matiere`
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        JOIN `matiere` ON `matiere`.`id` = `cours`.`matiere_id`
+
+2)
+
+SELECT `cours`.`id`,
+		`cours`.`libelle`,
+        `professeur`.`nom` AS `nom professeur`,
+        `matiere`.`libelle` AS `libelle matiere`,
+        COUNT(`participations`.`idEtudiant`) as nb_participants
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        JOIN `matiere` ON `matiere`.`id` = `cours`.`matiere_id`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+        GROUP BY `cours`.`id`
+
+3)
+
+SELECT  DISTINCT `etudiant`.`nom` AS `nom professeur`,
+		`professeur`.`nom` AS `nom professeur`
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        JOIN `matiere` ON `matiere`.`id` = `cours`.`matiere_id`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+		JOIN `etudiant` ON `etudiant`.`id` = `participations`.`idEtudiant`        
+        WHERE `professeur`.`id`=2
+		
+4)
+
+SELECT  DISTINCT `etudiant`.`nom` AS `nom etudiant`,
+		`matiere`.`libelle` AS `nom matiere`
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        JOIN `matiere` ON `matiere`.`id` = `cours`.`matiere_id`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+		JOIN `etudiant` ON `etudiant`.`id` = `participations`.`idEtudiant`        
+        WHERE `matiere`.`id`=2
+		
+5)
+SELECT  COUNT(`cours`.`id`) as `NB_COURS`,
+		`professeur`.`nom`
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        GROUP BY `professeur`.`id`
+/*        HAVING COUNT(`cours`.`id`) >= 2		*/
+		
+6)
+SELECT  COUNT(DISTINCT `participations`.`idEtudiant`) as `NB_ETUDIANT`,
+		`professeur`.`nom`
+        FROM `cours`
+        JOIN `professeur` ON `professeur`.`id` = `cours`.`profid`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+        GROUP BY `professeur`.`id`
+
+7)
+SELECT  COUNT(`participations`.`idEtudiant`) * 100 
+				/ `cours`.`capaciteMax` as `TAUX_REMP`,
+		`cours`.`libelle`
+        FROM `cours`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+        GROUP BY `cours`.`id`
+
+8)
+SELECT `cours_taux`.`prof_nom`,
+		AVG(`cours_taux`.`TAUX_REMP`)
+FROM
+
+(SELECT  COUNT(`participations`.`idEtudiant`) * 100 
+				/ `cours`.`capaciteMax` as `TAUX_REMP`,
+		`cours`.`libelle`,
+        `professeur`.`nom` as `prof_nom`
+        FROM `cours`
+        JOIN `participations` ON `cours`.`id` = `participations`.`idCours`
+        JOIN `professeur` ON `cours`.`profid` = `professeur`.`id`
+        GROUP BY `cours`.`id`) AS `cours_taux`
+        
+GROUP BY `prof_nom`
 
 
-
-
+10)
+select `etudiant`.`nom` FROM `etudiant`
+		WHERE NOT EXISTS (
+            select `participations`.`idEtudiant` FROM `participations`
+            		JOIN `cours` ON `cours`.`id` = `participations`.`idCours`
+            WHERE `participations`.`idEtudiant`= `etudiant`.`id` AND `cours`.`profid`=4
+        )
 	
