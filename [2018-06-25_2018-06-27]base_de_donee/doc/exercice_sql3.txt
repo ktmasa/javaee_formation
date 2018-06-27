@@ -1,0 +1,31 @@
+exercice SQL no 3
+-------------------
+danbs la base université
+
+1) lister les libelle de cours avec le libelle de la matiere du cours et
+le nom du professeur
+
+2) lister les memes informations qu'au dessus + le nombre d'etudiant
+participant au cours
+
+3) lister tous les etudiants assistant à au moins un cours d'un formateur
+particulier
+	indice, pour eviter de retrouver plusieurs fois cité un même etudiant
+	utiliser DISTINCT(etudiant.nom) par exemple
+4) idem, mais en fonction de la matiere (exemple tous ceux assistant au moins a un cours java)
+5) lister les professeurs et le nombre de cours qu'ils donnent
+6) lister les professeur et le nombre total d'etudiants qui assistent a leur cours
+	ATTENTION, ne pas compter plusieurs fois le même étudiant
+7) lister les cours et leur taux de remplissage
+
+8) lister les formateur et leur taux moyen de remplissage de cours
+9) lister les matiere et leur taux moyen de remplissage de cours
+10) lister les etudiants qui ne suivent aucun cours d'un formateur particulier
+11) lister les etudiants assistant a au moins un cours dans 2 matiere précisé
+	exemple: etudiant qui suivent java et opera
+	
+
+
+
+
+	
