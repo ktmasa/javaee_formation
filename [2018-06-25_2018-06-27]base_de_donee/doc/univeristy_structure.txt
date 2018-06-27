@@ -1,0 +1,40 @@
+base_university
+
+Etudiant
+--------
+id
+nom
+prenom
+email
+
+Matiere
+-------
+id
+libelle
+
+par exemple, "JAVA", "OPERA", "MATH"....
+
+PROFESSEUR
+----------
+id
+nom
+prenom
+salaire
+
+COURS
+-------
+id
+libelle
+dateDebut
+dateFin
+capaciteMax (int)
+matiere_id -> matiere
+profId -> professeur
+
+PARTICIPATION
+-------------
+idCours -> cours
+idEtudiant -> etudiant
+
+
+

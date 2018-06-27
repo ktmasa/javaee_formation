@@ -1,0 +1,25 @@
+recherche par un tag
+
+SELECT 	`article`.`id`,
+		`article`.`titre`,
+        `tag`.`libelle`
+	FROM `article`
+	JOIN `tag_article` ON `article`.`id` = `tag_article`.`articleId`
+    JOIN `tag` ON `tag_article`.`tagId` = `tag`.`id`
+    WHERE `tag_article`.`tagId` = 1
+
+recherche par tag exclus
+	
+SELECT 	`article`.`id`,
+		`article`.`titre`,
+        `tag`.`libelle`
+	FROM `article`
+	JOIN `tag_article` ON `article`.`id` = `tag_article`.`articleId`
+    JOIN `tag` ON `tag_article`.`tagId` = `tag`.`id`
+    WHERE NOT EXISTS 
+    (SELECT `t_a`.`tagId` FROM `tag_article` as `t_a` 
+     WHERE `t_a`.`articleId` = 	`article`.`id` AND `t_a`.`tagId`=1)
+	 
+
+	 
+	 
