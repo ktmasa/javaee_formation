@@ -7,3 +7,34 @@ etape 1
 2) lister les cas d'utilisation
 3) bien fixer le périmetre du dab à modéliser
 
+--------------------------------
+1)
+	- client banque (humain) (primaire)
+	- porteur de carte (humain) (primaire)
+	- agent maintenance(humain) (secondaire)
+	- convoyeur fond (humain)  ...
+	- agent banque (humain)
+	- SI Banque (non humain)
+	- SI Visa (non humain)
+	
+2)
+	- retirer argent
+	- deposer argent
+	- consulter solde
+	- imprimer rib
+	- recharger billets
+	- retirer chequier
+	- recupérer depots
+	- authentifier
+	- maintenir
+	
+3)
+	- carte bancaire fait partie du DAB ou pas ?
+		choix: CB fait partie du dab (pas un acteur)
+		choix: SI banque ne fait pas partie du dab
+		
+	
+	
+	
+	
+

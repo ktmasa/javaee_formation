@@ -1,0 +1,28 @@
+dab etape 2
+----------------
+diagramme de cas d'utilisation
+
+LES ACTEURS
+
+primaire
+- client banque (humain)
+- porteur de carte (humain)
+
+secondaire
+- agent maintenance(humain)
+- convoyeur fond (humain) 
+- SI Banque (non humain)
+- SI Visa (non humain)
+
+CAS UTILISATION
+	- retirer argent
+	- deposer argent
+	- consulter solde
+	- imprimer rib
+	- recharger billets
+	- recupérer depots
+	- authentifier
+	- maintenir
+
+
+
