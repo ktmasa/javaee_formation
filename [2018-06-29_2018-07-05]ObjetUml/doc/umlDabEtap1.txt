@@ -1,0 +1,9 @@
+modelisation DAB (distributeur automatique de billet)
+etape 1
+-----------
+1)lister les acteurs interagissant avec le DAB
+	- humain ou non
+	- déterminer les acteurs primaires et secondaires
+2) lister les cas d'utilisation
+3) bien fixer le périmetre du dab à modéliser
+

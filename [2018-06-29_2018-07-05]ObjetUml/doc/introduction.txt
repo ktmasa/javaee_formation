@@ -1,0 +1,44 @@
+	UML -> Unified Modeling Langage
+	
+un ensemble de diagramme qui aide à la modélisation de systeme
+complexe.
+	regroupement desmeilleurs "pratique/diagrammes" utilisé en
+	informatique et leur unification
+
+UML -> veritable langage (que l'on n'explorera pas ici) qui
+permet de creer ses propres types de diagrammes
+
+quelques principaux diagrammes récurrents:
+	- diagramme de classes
+	- diagramme de cas d'utilisation
+	- diagramme de sequence/collaboration
+	- diagramme d'activité
+	- diagramme d'etat/transition -> statechart
+	- diagramme de deploiement
+	- diagramme d'Entite/relation
+	- diagramme de composants
+	- diagramme d'objets
+	etc/etc
+
+diagrammes statiques
+	-> structure du system
+	-> un instantané de celui-ci
+	diagramme de classe, deploiement,
+	composants, objets, entite/relation
+	
+diagrammes dynamiques
+	-> systeme en fonctionnement
+	-> déroulement/enchainement
+	activité, etat/transition, sequence/collaboration
+	
+diagramme de cas d'utilisation
+	en général, par celui-ci que l'on commence
+	c'est une vue très générale du systeme à modéliser
+	et de ses cas d'utilisation, c'est à dire:
+		1) des limistes dy systeme (périmetre)
+		2) quels sont les acteurs qui interagisse/utilise
+		votre systeme
+		3) comment/pourquoi utilisent ils votre systeme
+		
+	
+	
