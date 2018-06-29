@@ -1,0 +1,9 @@
+visibilité
+
+			classe	 package  heritier  le reste du monde
+public		  X			X		X			X
+protected	  X			X       X			-
+package		  X			X       -			-
+private		  X			-		-			-
+
+
