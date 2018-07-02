@@ -1,0 +1,11 @@
+objet avancé
+-------------------
+
+dans langages modernes, héritage simple
+	-> heritage multiple est plutot délaissé (complication)
+	
+pourquoi utilise t'on l'heritage multiple
+	A) soit on veut réutiliser du code de deux classe parente
+	B) soit on veut bénéficier du polymorphisme
+	
+	

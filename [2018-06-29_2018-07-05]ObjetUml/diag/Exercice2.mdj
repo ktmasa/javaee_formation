@@ -11353,6 +11353,82 @@
 							"name": "nom"
 						}
 					]
+				},
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFkW0CGcXle0WE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ClassDiagram1"
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFkW0CQD3mjnxo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class1",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFkW0Clf3n1qNw=",
+							"_parent": {
+								"$ref": "AAAAAAFkW0CQD3mjnxo="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFkW0Clf3n2ssg=",
+								"_parent": {
+									"$ref": "AAAAAAFkW0Clf3n1qNw="
+								},
+								"reference": {
+									"$ref": "AAAAAAFkW0CQD3mjnxo="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFkW0Clf3n3m1k=",
+								"_parent": {
+									"$ref": "AAAAAAFkW0Clf3n1qNw="
+								},
+								"reference": {
+									"$ref": "AAAAAAFkW0Cbf3nMMks="
+								}
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFkW0Cbf3nMMks=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class2"
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFkW0DZwHpBbx0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Class3",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociationClassLink",
+							"_id": "AAAAAAFkW0DrM3p/8rM=",
+							"_parent": {
+								"$ref": "AAAAAAFkW0DZwHpBbx0="
+							},
+							"classSide": {
+								"$ref": "AAAAAAFkW0DZwHpBbx0="
+							},
+							"associationSide": {
+								"$ref": "AAAAAAFkW0Clf3n1qNw="
+							}
+						}
+					]
 				}
 			]
 		}

@@ -10,6 +10,6 @@ passager différents
 6) un vol a un aéroport de départ, et un d'arrivée
 7) un vol a un jour et une heure de départ, et un jour et une
 heure d'arrivée
-8) un vol oeut comporter des escales dans des aeroports
+8) un vol peut comporter des escales dans des aeroports
 9) une escale a une heure d'arrivée et une heure de départ
 10) chaque aéroport dessert une ou plusieurs villes
