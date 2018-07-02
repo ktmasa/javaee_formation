@@ -1,0 +1,15 @@
+exercice UML 2
+---------------
+1) modeliser un diagramme de classe avec une classe
+représentant un répertoire, et une un fichier, un repertoire
+contenant des fichiers ou sous-repertoire
+
+2) les modems et clavier sont de périphériques d'entree sortie
+
+3) une transaction boursiere est une achat ou une vente
+
+-------------------------------------
+4) modéliser un jeux d'echec
+on veut pouvoir représenter une partie d'echec, quels sont les
+classes nécéssaires
+
