@@ -1,9 +1,88 @@
-visibilité
+Introduction Objet
+----------------------
+POO -> Programmation Orientée Objet
+	La quasi totalité des langages objets sont à base de classe
+	mais pas tous
+		1 exception notable -> javascript -> prototypal
 
+Un objet, qu'est ce donc?
+	1) le regroupement, dans une entite, de donnée structurée
+	et des fonctions pour les manipuler
+	-> etat: attribut/properties/variables
+	-> opérations: méthodes/fonctions...
+	
+	exemple:
+		Classe Personne(nom, age : contacter())
+		Instance	("bob", 25)
+		Instance	("bruce", 35)
+		....
+
+pourquoi l'objet?
+la programmation orientée objet offre plusieurs facilités
+	- cela permet d'organiser/conceptualiser ce qu'on manipule
+	dans un programme: structuration
+	- permet de lier des fonction à une structure de données
+	ces fonctions sont alors communément appelée des méthodes/fonctions
+	
+	- la combinaison des ces 2 caractéristiques permet de mieux
+	modulariser le code: (encapsulation et objet "boite noire")
+	
+	- en plus se rajoute le concept d'heritage
+		réutiliser/factoriser du code et généraliser/spécialiser
+		nos objets
+	il ya une relation d'heritage entre 2 classes, une classe
+	parent (plus général), et une classe enfant (spécialisée)
+	
+	la relation d'heritage permet a une classe descendante (par exmple
+	une classe enfant) de bénéficier des tous ce qui é déjà été déclaré
+	dans la classe parent, c.a.d les operations et les attributs
+	
+	- des attributs peuvent être ajouter en plus dans les classes enfants
+	mais en aucun cas enlevé
+	
+	- des methodes/operations peuvent aussi être ajoutées, en aucun
+	cas retirée, mais par contre peuvent être "remplacée" par une
+	nouvelle version plus adaptée
+		la classe enfant défini une nouvelle version de la même
+		méthode héritée de son parent. Celle-ci prend le pas sur
+		celle de son parent pour les objets du type enfant
+	
+--> il existe deux grandes categories d'heritage de classe
+		-> heritage simple
+			un seul parent par classe
+		-> heritage multiple
+			on peut heriter de plusieurs parents
+			
+-> dans les langages modernes objet, la grande majorité est
+à héritage simple. L'héritage multiple est assez rare
+
+-> autre aspect important de l'objet, l'aspect "boite noire"
+	le but ici est d'isoler les détails de fonctionnement interne
+	de notre objet, et d' n'exposer en "public" que ce qui est
+	nécéssaire à son utilisation
+	
+pour permettre cela, on utilise le principe d'encapsulation
+et de visibilité
+
+visibilité
 			classe	 package  heritier  le reste du monde
-public		  X			X		X			X
-protected	  X			X       X			-
-package		  X			X       -			-
-private		  X			-		-			-
++ public	  X			X		X			X
+# protected	  X			X       X			-
+~ package	  X			X       -			-
+- private	  X			-		-			-
+
+un attribut déclaré en private n'est accessible que depuis
+une méthode de la c'objet/classe
+de la découle l'encapsulation:
+	-> on peut fournir a l'exterieur l'accès a un attribut privé
+	via des methodes non privée
+	comme nous controlons le code de ces méthodes, on peut
+	procéder à des verification/validation ou transformation
+	avant l'accès proprement dit
+	
+quand un enfant herite d'une classe parent, il n'a pas access
+au attributs/méthodes prives de son parent
+si cet accès est nécéssaire, il faut alors utiliser le niveau
+de visibilité protected
 
 
