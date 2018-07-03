@@ -1,0 +1,19 @@
+exercice modelisation diagramme classe boutique
+-------------------------------------------------
+1) Une boutique en ligne propose un catalogue de produits
+2) un client de cette boutique possede un compte sur celle-ci
+3) on peu procéder à un "shopping" en ajoutant une certaine
+quantité de produit à un panier, jusqu'a obtention du panier désiré
+4) le montant total du panier est affiché à la commande
+5) pour passer une commande, il faut un moyen de paiement
+6) divers moyen de paiement déjà disponnible (CB, virement, etc..)
+et l'on souhaite pouvoir aisément ajouter à l'avenir de nouveau
+moyens de paiement
+7) un client peu consulter son historique de commande
+8) une fois une commande passée, son prix total ne change plus,
+même si le prix des produits change entre temps
+
+bonus:
+
+9) gestion des frais de livraison
+produit: nom, prix, poids

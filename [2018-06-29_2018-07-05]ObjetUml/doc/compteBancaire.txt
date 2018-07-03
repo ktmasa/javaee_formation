@@ -1,0 +1,25 @@
+unification compte bancaire
+----------------------------
+2 banques qui mettent en commun leur SI
+chacune a ses propres classes et hierarchie pour représenter
+un compte bancaire
+
+Banque BNB
+CompteAbstrait --> CompteEpargneBNB
+-----------------------------------
+numeroCompte		solde
+gestionnaire
+
+
+Banque souris
+CompteSourisBase --> CompteCourantSouris
+Iban
+numeroFidelite		balance
+
+
+
+un systeme informatique avec une fonction
+qui me permette de transferer de l'argent entre ces comptes
+sans se soucier de leur origine/type
+
+Tansfert(compte1 , compte2, montant)

@@ -83,6 +83,27 @@ POURQUOI des interfaces?
 les interfaces sont un des concepts fondamentaux pour modulariser
 votre code, le rendre le plus réutilisable/flexible
 
+-------------------------------------
+les attributs et methodes de classe (par opposition 
+a ceux d'instances)
+
+un attribut d'instance, c'est une vairable donc chaque instance
+de la classe aura son propre exemplaire
+	Personne p1 : nom = "bob"
+	Personne p2 : nom = "joe"
+	....
+	
+il existe des attributs de Classe souvant dénoté attributs statiques
+un attribut statique est lié à la classe en général et pas
+à un exemplaire/instance de l'objet en particulier
+
+de la même manière, une méthode peut être déclarée statique
+dans ce cas, elle est appelé sans instance associé
+	-> pas d'accès aux attributs d'instance
+	-> accès aux attributs statiques
+
+	
+
 	
 	
 	
