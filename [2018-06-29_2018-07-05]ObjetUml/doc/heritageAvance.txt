@@ -80,7 +80,7 @@ POURQUOI des interfaces?
 	dans une même classe, il suffit de fournit une seul fois
 	cette méthode
 	
-les interfaces sont un des concempts fondamentaux pour modulariser
+les interfaces sont un des concepts fondamentaux pour modulariser
 votre code, le rendre le plus réutilisable/flexible
 
 	
