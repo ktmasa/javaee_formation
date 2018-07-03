@@ -2,7 +2,8 @@ package app;
 
 import java.time.LocalDate;
 
-public class Employe extends Personne {
+public class Employe extends Personne implements Affichable
+{
 
 	private String poste;
 	public double salaire;
@@ -21,6 +22,11 @@ public class Employe extends Personne {
 	@Override
 	public void contacter() {
 		System.out.println("l'employee " + this.nom + " est demandé au poste " + this.poste );
+	}
+
+	@Override
+	public void afficher() {
+		System.out.println("afficher " + this.nom);
 	}
 	
 	

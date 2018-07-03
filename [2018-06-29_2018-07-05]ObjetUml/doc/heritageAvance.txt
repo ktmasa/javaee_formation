@@ -8,4 +8,96 @@ pourquoi utilise t'on l'heritage multiple
 	A) soit on veut réutiliser du code de deux classe parente
 	B) soit on veut bénéficier du polymorphisme
 	
+lors de l'heritage, on poursuit en général 2 objectifs
+	-> soit le but est de spécialiser une classe existente
+	en étendant son comportement : heritage d'extension
+		-> parent (existente) -> ajoute nos besoins
+	
+	-> soit le but est de généraliser a partir de plusieurs
+	classe un comportement/ou contrat commun
+		-> on extrait un "contrat" partagé entre toutes les
+		classes dérivées pour en faire une classe parente
+		
+	le 2 eme cas est de très loin le plus utile et utilisé
+	
+ce 2eme cas peut être reproduit sans les complications de 
+l'heritage multiple classique
+	-> mecanisme d'interface (objet)
+	
+avant de parler des interfaces, les classes abstraites:
+	une classe abstraite ne peut pas etre instanciée
+	Elle ne sert que comme base d'heritage pour d'autres classes
+	
+	avec l'heritage, on peut redéfinir une fonction hérité
+	de ses ascendants (parent ou grand parent ou...)
+	
+une methode
+	définition -> signature : nom, parametres, ce que ca retourne
+	corps -> code execute/logique de cette méthode
+	
+quand on override une méthode du parent
+	une classe contient une liste d'attribut
+	une liste de signature/définition de méthode
+	le code des méthodes déclarée dans la classe
+
+dans une classe enfant qui override, on remplace le corps
+de celle-ci
+
+dans le cas d'une classe abstraite, jamais on n'aura d'instance
+de celle-ci
+	une methode abstraite a sa définition, mais pas son corps
+	on a le droit de définir une méthode abstraite uniquement
+	si la classe est abstraite
+	
+	si une classe hérite de cette classe abstraite
+	elle à l'obligation de fournir le code des méthodes abstraite
+	héritée
+	
+exemple:
+	Piece dans le jeu d'echec peut etre abstraite, charge
+	au descendants de fournir la methode deplacements
+	deplacements est une méthode abstraite de la classe piece
+	
+	methode abstraite implique classe abstraite
+	l'inverse n'est pas obligatoire
+	classe abstraite n'oblige a avaoir des méthodes abstraite
+	
+une classe purement abstraite (sans corps de méthode ni attributs)
+est un cas particulier. Elle se comporte comme un contrat
+	-> c'est une interface
+	
+POURQUOI des interfaces?
+
+	pour bénéficier du polymorphisme de l'override
+	sans les complications de l'heritage multiple
+	
+	En effet comme une interface ne contient que des définition
+	de methode, et ni code ni attributs, il n'y a pas d'ambiguité
+	possible d'heritage entre attributs et code, même en heritant
+	de plusieurs interfaces
+	
+	si deux interface dévlare la même méthode et que j'en herite
+	dans une même classe, il suffit de fournit une seul fois
+	cette méthode
+	
+les interfaces sont un des concempts fondamentaux pour modulariser
+votre code, le rendre le plus réutilisable/flexible
+
+	
+	
+	
+
+
+
+	
+
+
+	
+	
+	
+
+	
+
+
+	
 	

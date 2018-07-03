@@ -40,6 +40,8 @@ public class App {
 		p3 = c1;
 		p3.contacter();
 		
+		//Affichable a1 = new Employe("joe", "joe", null, "hkjhkj", 55.5);
+		//a1 = p3;
 		
 	}
 
