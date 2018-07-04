@@ -28,5 +28,21 @@ exemplaire qui nous est renvoyé
 	de récupérer l'instance de l'objet
 	
 	
+B) immutable
+l'état de l'objet ne peut être modifié après sa création. toutes fonctions
+impliquant une modification renvoie une nouvelle copie modifiée de l'objet
+sans altérer l'original
+
+C) Factory -> fabrique d'objet
+le but est de ne pas avoir a connaitre les détails de fabrication
+d'un type d'objet pour pouvoir l'utiliser. on va déleguer la construction
+de l'objet a une classe tierce, qu'on apelle factory
+	une factory peut juste nous cacher les details de fabrication
+	une factory peut aussi décider quel type exact d'objet fournir
+	
+
+
+
+
 
 
