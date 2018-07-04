@@ -1,5 +1,7 @@
 package immutableApp;
 
+import java.time.LocalDate;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -15,6 +17,13 @@ public class App {
 		System.out.println(v1);
 		System.out.println(v3);
 		System.out.println(v2);
+		
+		Transaction t1 = new Transaction(LocalDate.now(), 200, "livretA", "comptecourant");
+		System.out.println(t1);
+		Transaction t2 = t1.changeMontant(300);
+		System.out.println(t2);
+		System.out.println(t1);
+		
 		
 	}
 
