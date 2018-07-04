@@ -1,5 +1,6 @@
 package factoryApp;
 
+
 public class Dollar implements IMoney {
 	double somme = 0.0;
 	
