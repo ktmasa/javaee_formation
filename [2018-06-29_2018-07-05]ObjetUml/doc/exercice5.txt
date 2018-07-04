@@ -1,0 +1,17 @@
+Exercice montre etat-transition
+--------------------------------
+on modélise le fonctionnement d'un montre digitale simplifiée
+
+1) la montre à 2 boutons (b1 et b2)
+2) par defaut elle afficher l'heure
+3) si on appuit sur b1 avec l'heure affichée -> retroeclairage
+4) une fois activé, le rétroéclairage reste 15 secondes
+5) si on appuit sur b2 depuis heure, on arrive sur le reglage
+heure
+6) sur reglage heure, si on appuit sur b1 -> incrementer 
+heure/min
+	si on appuit sur b2 -> fin du regalge retour à affichage
+	heure
+7) au bout d'1 minute sans toucher au bouton -> retour affichage 
+heure
+

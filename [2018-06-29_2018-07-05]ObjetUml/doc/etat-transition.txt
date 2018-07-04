@@ -1,0 +1,18 @@
+diagramme etat-transition (statechart)
+--------------------------
+
+c'est un diagramme dynamique. on représente les etats dans lequel
+peut se trouver le systeme, et les transitions entre ces etats.
+
+c'est en quelquesorte le complémentaire du diargramme d'activité
+	1-> le diagramme d'activité a une vue centrée sur les "actions"
+	et leur enchainement
+	2-> le diagramme d'état transition est centré sur l'état du systeme
+	et comment on en change
+	
+le diagramme d'état transition, s'il est respecté à la lettre, est
+"turing-complete", executable tel quel.
+il existe un formalisme complet de ceux-ci.
+
+
+
