@@ -1,0 +1,32 @@
+design pattern
+------------------
+c'est un "motif", ou organisation du code/classe souvent
+rencontré pour répondre à des problématiques courante
+	-> en connaitre quelques un évitera de réinventer la roue
+	(en moins bien)
+	-> c'est aussi une bonne source d'inspiration
+il en existe une infinité, mais quelques uns se rencontre partout
+certains sont même directement "intégré" au langage modernes
+
+
+A) design pattern singleton
+on veut une classe qui n'ai qu'une seule instance en existence
+il n'y a qu'un seul "représentant" de notre objet, et a chaquefois
+que l'on veut obtenir une instance de cet objet, c'est le même
+exemplaire qui nous est renvoyé
+	exemple classique, une classe Configuration, qui contient
+	tous les parametres de notre application, accessible partout
+	dans notre application
+		-> on ne veut pas plusieurs exemplaire, potentiellement
+		différent de notre configuration unique
+			pattern singleton
+			
+	1- le constructeur de notre objet va être passé en private
+	2- stocker l'instance unique de l'objet dans une propriété
+	statique de notre classe (private)
+	3- fournir une méthode statique permettant au "reste de l'application"
+	de récupérer l'instance de l'objet
+	
+	
+
+

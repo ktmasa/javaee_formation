@@ -1,0 +1,12 @@
+transaction Immutable
+
+Transaction -> date : LocalDate,
+			   montant : double,
+			   source : string,
+			   destination : string
+			   
+classe immutable
+	-> creer une transaction OK
+	-> modifier le montant -> nouvelle transaction
+	-> combiner 2 transction -> nouvelle transaction
+	
