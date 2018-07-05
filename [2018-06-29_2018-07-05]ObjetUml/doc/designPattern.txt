@@ -41,6 +41,21 @@ de l'objet a une classe tierce, qu'on apelle factory
 	une factory peut aussi décider quel type exact d'objet fournir
 	
 
+D) Builder (variation de factory)
+de rendre plus aisé la construction d'une classe particulièrement
+complexe. Si la construction d'un objet de cette classe nécéssite
+beaucoup de parametres, avec potentiellement des regles à respecter
+et des variantes, cela devient très laborieux de construire l'objet
+traditionellement.
+dans ce cas la, on peut utiliser une factory spéciale appelée builder
+une classe sert a construire un objet d'une autre classe
+le but n'est pas de choisir la classe, mais de bien construire
+l'objet avec une syntaxe simplifiée à l'usage
+
+
+
+
+
 
 
 
