@@ -1,0 +1,17 @@
+exercice 6
+---------------
+modéliser en UML une partie du projet fil rouge:
+	- pas de gestion d'utilisateur, ni du catalogue materiel
+	modéliser la planification d'une intervention sur un site
+	
+-> diagramme cas d'utilisation d'une intervention curative
+	-											preventive
+	- replanification d'une intervention
+
+- faire diagramme ER des objets metier (class optionnel)
+- détailler au moins 2 cas d'utilisations via diagramme
+de séquence
+bonus
+- diagramme d'état transition sur le statut/etat d'une 
+intervention
+	
