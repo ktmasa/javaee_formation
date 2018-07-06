@@ -1,0 +1,29 @@
+exercice git 1
+----------------
+
+creer un nouveau dépot local git exo1
+faire 1 commit sur la branche maste avec un readme
+creer et basucler sur une branche dev
+retourner sur la branche master
+creer un repertoire doc dans le depot
+et un fichier install.txt (avec du texte)
+commiter dans master
+renommer le fichier install.txt en install.md
+commiter dans master
+
+basculer vers dev
+creer un repertoire code
+ajouter un fichier index.html dedans
+le modifier et commiter
+ajouter un fichier style.css
+modifier et commiter
+
+OOPPS -> revenir en arriere d'un commit sur la branche dev
+en defaisant complement le dernier commit
+
+
+merger la branche dev dans la branche master
+
+
+
+

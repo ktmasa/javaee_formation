@@ -1,0 +1,42 @@
+HEAD^  -> 1 en arriere
+HEAD^^ -> 2 en arriere
+HEAD~1 -> 1 en arriere
+HEAD~2 -> 2 en arriere
+
+git checkout noCommit
+git checkout HEAD~1
+git checkout nom_branche
+...
+
+positionne HEAD sur le commit de votre choix
+en synchronisant la copie de travail
+
+on ne peut normalement pas commiter si on est pas
+sur une branche
+
+si, pour une raison ou une autre, on veut annuler un commit
+ou add/mv/rm précédent
+on a la commande: git reset
+
+git reset --hard
+	par defaut sur HEAD de la branche courante
+	--> il reinitialise tout
+		- le commit ou on est positionné
+		- le contenu de la staging area
+		- le contenu de la copie travail
+git reset
+	par defaut sur HEAD de la branche courante
+	--> il reinitialise
+		- le commit ou on est positionné
+		- le contenu de la staging area
+		mais pas la copie de travail
+		
+git reset --soft
+	par defaut sur HEAD de la branche courante
+	--> il reinitialise uniquement
+		- le commit ou on est positionné
+	
+
+
+
+
