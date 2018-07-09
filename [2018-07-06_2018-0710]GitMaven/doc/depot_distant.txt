@@ -1,0 +1,111 @@
+la gestion des clone et de l'historique
+-----------------------------------------
+
+ on peut cloner n'importe quel dépot
+	mais en génral, on clone un depot de type "bare"
+	qui permet de synchroniser plus tard les historiques
+	
+initialisation d'un depot bare
+	git init --bare
+	c'est en général ce qu'il se passe à la creation d'un depot
+	sur github par exemple
+	
+ensuite, pour creer une depot de travail
+git clone "depot origine" "nouvelle copie"
+
+barerepo ---> clone ---> copierepo
+
+dans le clone, plusieurs chose:
+	un remote "origin" est automatiquement crée qui pointe
+	vers le dépot que l'on a cloné
+	
+	origin est le nom "par defaut" du depot d'origine
+	
+pour lister les remote d'un clone
+	git remote -v
+
+	le clone sera automatiquement positionné sur la dernier commit
+	de la branche master du depot maitre (barrepo)
+	
+copieRepo
+	-> working tree (copie de travail)
+	-> historique de master (tous les commit de la branche master LOCALE)
+	-> historique du master d'origin 
+							(tous les commit de la branche master DISTANTE)
+
+si je travail localement et ajoute un commit dans mon clone
+	-> un nouveau commit local dans ma branche master LOCALE
+		la branche origin/master n'a pas bougé, elle est en retard
+		d'un commit par rapport au master LOCALE
+	git status me l'indiquera
+
+si je fait un: git push origin master
+	je demande à git d'envoyer sur la branche master du depot d'origine
+	mes nouveau commit. si tout se passe bien, le depot distant (sa branche master)
+	est maintenant à jour ainsi que mon ORIGIN/MASTER local
+
+la mise à jour dans le sens inverse:
+J'ai un autre clone du même dépot distant, il ne connait pas le nouveau
+commit
+
+copie2
+	master		origin/master
+	(2)				(2)			
+	 |				 |
+	 |				 |
+	 v				 v
+	(1)				(1)
+
+depot maitre (origin)
+	master
+	(3)
+	 |
+	 |
+	 v
+	(2)
+	 |
+	 |
+	 v
+	(1)
+	
+git fetch origin master : mise a jour de l'historique distant LOCALEMENT
+copie2
+	master		origin/master
+	(2)				(3)			
+	 |				 |
+	 |				 |
+	 v				 v
+	(1)				(2)
+					 |
+					 |
+					 v
+					(1)
+
+
+git status --> en retard d'un commit
+
+git merge origin/master
+	
+	master		origin/master
+	(3)				(3)			
+	 |				 |
+	 |				 |
+	 v				 v
+	(2)				(2)
+	 |				 |
+	 |				 |
+	 v				 v
+	(1)				(1)
+
+raccourci:
+	git pull origin master:
+		git fetch origin master
+		git merge origin/master
+
+en cas de conflit au push, une des procedures est de
+	- sauver vos commit dans une nouvelle branche
+	- reinitialiser la branche en conflit vers un commit cohérent avec origin
+	- fetcher/merger les nouveau commit distant pour se synchroniser
+	- merger les commit sauvegarder depuis la nouvelle branche
+	- effacer la nouvelle branche
+	

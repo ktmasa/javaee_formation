@@ -1,0 +1,11 @@
+exercice git 2
+----------------
+
+creer 1 depot bare "depotcommun"
+le cloner dans un depot "depotindividu1"
+faire 2 commit dans depotindividu1
+synchroniser avec le depot distant "depotcommun"
+cloner a nouveau "depotcommun" dans un nouveau depot "depotindividu2"
+faire 2 commit dans depotindividu2
+synchroniser avec depot maitre 'commun'
+rapatrier dans depotindividu1 les nouveau commit de depotindividu2
