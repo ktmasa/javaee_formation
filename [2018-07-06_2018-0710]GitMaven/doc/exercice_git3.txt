@@ -1,0 +1,12 @@
+exercice git 3
+---------------
+creer un depot simple "projetexo3"
+travailler sur le projet
+un commit initial dans la branche master (readme.md)
+une branche dev avec des commits dans le sous-rep "source"
+unr branche doc avec des commits dans le sous-rep "doc"
+merger dans master la branche dev
+rappatrier les modifications de master dans "doc"
+continuer a travailler sur doc (2 commit)
+faire merge fast-forward de doc dans master
+

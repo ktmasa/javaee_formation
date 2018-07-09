@@ -109,3 +109,13 @@ en cas de conflit au push, une des procedures est de
 	- merger les commit sauvegarder depuis la nouvelle branche
 	- effacer la nouvelle branche
 	
+consultation historique
+----------------------
+voir le fichier tel qu'il était il y a 2 commit
+git show HEAD~2:config.ini
+
+voire les differences entre 2 versions du même fichier
+git diff HEAD~3:config.ini..HEAD~1:config.ini
+
+
+
