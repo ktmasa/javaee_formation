@@ -16,7 +16,7 @@ du coté dev
 	sur laquelle on travail
 	quand la feature est prete, on merge vers la branche dev
 	
-cas particluier le hot fix, un correctif urgent.
+cas particulier le hot fix, un correctif urgent.
 	part de la branche master
 		-> branche pour le hotfix, correctif
 		-> merge vers master et vers dev

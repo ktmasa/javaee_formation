@@ -1,0 +1,50 @@
+MAVEN
+-----------------------
+maven est un outils de compilation/packaging de projet java
+un "build system"
+
+eclipse entre autre, integre directement maven
+le but de maven, c'est de générer le "livrable" (executable, jar, war)
+a partir du code source du projet
+
+il y a eu différents outils de build en java
+	historiquement -> ant
+		ant définissait un ensemble de taches a executer
+		via un fichier xml
+		exemple :
+			copier fichier
+			compiler un fichier
+			effacer un fichier
+			executer une commande partculière
+			etc...
+		ant avait des "goal"/objectif. un objectif listait
+		les taches a effectuer pour le réaliser
+		
+	probleme ant:
+		- très flexible, mais assez complexe a réaliser, et a refaire
+		à chaque projet
+		- pas de gestion des librairies/dependances
+		
+	maven est apparu:
+		-> maven favorise une structure de projet prédéfinie
+			-> une structure correcte et de bonne pratique
+		-> gestion des dependances librairies
+	très important:
+		projet récent, il ya souvent des dizaines, voir centaine de librairies
+		gerer ces dependances a la main est extrement fastidieux et source
+		d'erreur
+
+------------------------------------------------------------
+	maven va définir un fichier décrivant votre projet:
+		pom.xml -> project object model
+	maven lira ce fichier, et executera vos commandes/objectifs
+	en fonction de celui-ci
+	
+	mvn archetype:generate -DgroupId=com.loncoto -DartifactId=mon-app -DarchertypeArtifactId=maven-archetype-quickstart
+		
+		
+		
+	
+		
+		
+		
