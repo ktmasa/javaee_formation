@@ -41,6 +41,24 @@ il y a eu différents outils de build en java
 	en fonction de celui-ci
 	
 	mvn archetype:generate -DgroupId=com.loncoto -DartifactId=mon-app -DarchertypeArtifactId=maven-archetype-quickstart
+	
+
+maven définit un ensemble d'etapes du cycle de vie du projet
+
+	clean -> nettoyage : supprimer tout ce qui a été généré/compiler/packager
+
+
+	validate ->verifier la conformité du projet
+	generate-sources -> generer du code source
+	compile ->compilation du programme (*.java -> *.class)
+	test -> executer les test unitaire
+	package -> regroupe ensemble tous les elements nécéssaire au livrable
+				-> genere le programme "pret a l'emploi"
+	install -> copie le livrable dans le cache/repository de maven (.m2)
+	deploy -> deployer dans un repository partagé
+	
+	exemple
+		quand je lance mvn install, il execute toutes les etapes précédentes
 		
 		
 		
