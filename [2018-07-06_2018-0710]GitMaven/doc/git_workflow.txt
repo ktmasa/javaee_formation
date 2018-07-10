@@ -1,0 +1,27 @@
+git workflow
+----------------------------------------------------
+une branche master qui représente les
+versions de "production" de votre logiciel
+
+une branche dev qui contient les commit du travail
+en cours entre chaque versions
+
+quand une version est prête pour une release:
+	1 -> plus de nouveau dev, juste des correctifs
+	2 -> creer une branche release depuis dev
+	3 -> une fois qu'elle est prete, on merge la release vers master
+	
+du coté dev
+	on peut creer une branche pour chaque nouvelle feature individuelle
+	sur laquelle on travail
+	quand la feature est prete, on merge vers la branche dev
+	
+cas particluier le hot fix, un correctif urgent.
+	part de la branche master
+		-> branche pour le hotfix, correctif
+		-> merge vers master et vers dev
+		
+cela facilite beaucoup le travail a plusieurs
+
+
+	

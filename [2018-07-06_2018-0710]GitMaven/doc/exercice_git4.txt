@@ -1,0 +1,17 @@
+exercice git 4 (git workflow)
+-----------------------------
+1) creer un nouveau dépot sur le github (exercice4)
+2) le cloner localement (fait un commit dans github, le Readme.md)
+
+mettre en place le workflow:
+creer une branche dev
+depuis dev creer une branche frontend
+faire des commit dedans
+depuis dev, creer une branche backend
+faire des commit dedans
+pusher toutes les branches vers le github
+
+merger les 2 feature (front et back end) vers dev
+merger dev vers master
+etiqueter le commit dans master avec v0.1  "permiere alpha"
+pusher les branches dans le github

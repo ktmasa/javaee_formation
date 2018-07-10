@@ -117,5 +117,31 @@ git show HEAD~2:config.ini
 voire les differences entre 2 versions du même fichier
 git diff HEAD~3:config.ini..HEAD~1:config.ini
 
+-------------------------
+le fichier ".gitignore" est reconnu automatiquement par git
+il contient la liste des "motifs" de fichier a ne pas suivre
+ceux-ci n'apparaitront jamais lors des git status ou add
+un motif par ligne
+
+----------------------------
+cherry-pick en git permet de rejouer un commit de votre
+choix sur la branche ou vous ête positionné
+on peut donner le numero du commit, ou toute autre identifiant
+
+git cherry-pick 78a1e7f9b
+
+-----------------------------
+git revert vous permet de faire un nouveau commit
+qui "defait" un ancien commit, c.a.d annule ses modifications
+git revert c747b0418c63e
+
+-----------------------------
+git tag vous permet d'etiqueter un commit pour le retrouver
+plus facilement et donner du sens a l'historique
+et/ou d'indiquer des commits a des outils ultérieurs
+pour retourner au commit taggé/etiqueté
+git checkout "label tag"
+attention, un tag n'est pas une branche, quand vous faite un checkout
+d'un tag, vous êtes en mode DETACHED_HEAD (pas de commit possible)
 
 
