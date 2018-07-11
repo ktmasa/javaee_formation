@@ -1,0 +1,17 @@
+div {
+    background-color: lightpink;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 40%;
+}
+
+div div {
+    background-color: mediumorchid;
+    margin: 10%;
+}
+
+div#boite2 div {
+    background-color: mediumblue;
+    margin: 10%;
+}

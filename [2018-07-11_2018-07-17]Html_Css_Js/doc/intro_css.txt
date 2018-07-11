@@ -1,0 +1,26 @@
+mise en page/forme dans le html (feuilles de style)
+----------------------------------------------------
+CSS (cascading style sheet) definissent 2 choses
+
+1) des selecteurs
+	savoir a quelle partie/element de la page s'applique un style
+2) les declarations de styles
+	quelle propriété prend quelle valeur
+	
+les balises html on deux attributs "speciaux"
+utilisables sur toutes les balises html
+	id et class
+id est un attribut identifiant uniquement une balise particulière
+de la page. vous ne pouvez pas avoir 2 elements avec le même id
+dans la même page html
+
+class, au contraire peut prendre la même valeur pour un ensemble de
+balise dans la page html
+
+ces attributs prennent les valeur que vous souhaités
+
+un selecteur css vas selectionner les elments de la page
+sur lequel appliqué un style, via id et class + type balise
+
+
+
