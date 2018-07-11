@@ -1,0 +1,61 @@
+HTML/CSS/Javascript
+---------------------
+
+HTML -> hypertext markup language
+ markup langage -> langage avec balise : <a>....</a>
+ hypertext -> des documents contenant du texte et des liens vers d'autres
+ documents
+ 
+web (http + html) a été introduit début des années 90
+	mis au point le format html initial
+	et le protocole http, permettant d'accéder a une page html
+	a distance (serveur web)
+http : hypertext transfert protocole
+
+a l'origine, uniquement html est défini
+	-> page statique avec du texte et des liens
+	html a été enrichi par la suite
+principalement par les editeurs de logiciel de navigation
+	un des premier navigateurs
+		- mosaic (unix)
+		- netscape
+			introduit des nouveautés
+			support des images, formatage et interactivité
+		- ensuite internet explorer
+
+	au début, tout passait par le langage html
+		-> contenu (structure)
+		-> formatage (style)
+		-> ... interactivité
+		
+actuellement:
+	html -> contenu /structure (très peut mise en forme)
+	css (cascading style sheets) -> mise en page(format)
+	javascript -> pages interactives/dynamiques
+
+	
+nous en somme a la version 5 de html
+	pendant très longtemps -> html 4, ou xhtml
+	quand le "regne" de IE à diminué, et que d'autres sont arrivés
+		- safari (apple)
+		- firefox (mozilla)
+		- chrome (google)
+		par la suite
+		- smartphone
+	html5 -> html moderne
+		-> introduit des nouveauté et standardisé des extensions
+		amenée par les navigateurs
+			-> nettoyé le html (abandonné le respect strict de xml)
+			-> canvas, multimedia
+			-> stockage local, geolocalisation, etc.
+		html5, c'est avant tout une evolution du javascript
+			-> api disponible
+	css3 -> feuille de style modernes
+		-> transitions/animations
+		-> ombrage, amélioration visuelle
+	
+	
+
+	
+	
+			
