@@ -1,0 +1,6 @@
+ligne de commande
+dans le rep du projet
+python -m http.server
+
+ensuite navigateur vers
+http://localhost:8000/

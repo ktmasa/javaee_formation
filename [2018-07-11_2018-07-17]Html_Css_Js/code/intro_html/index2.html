@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>les tableaux et div</title>
+</head>
+
+<body>
+    <h2>tableaux</h2>
+    <table border="2">
+        <thead>
+            <!-- les en tetes des colonnes du tableau -->
+            <tr>
+                <th>plat</th>
+                <th>prix</th>
+                <th>categorie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tr : table row , td : table date, une case du tableau -->
+            <tr>
+                <td>poulet frites</td>
+                <td>12.99</td>
+                <td>volailles</td>
+            </tr>
+            <tr>
+                <td>pave de saumon brocoli</td>
+                <td>14.99</td>
+                <td>poisson</td>
+            </tr>
+            <tr>
+                <td>steak de bison et quinoa</td>
+                <td>19.99</td>
+                <td>viande rouge</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>fusion de cellule</p>
+    <table border="1">
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td colspan="2">B2</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td rowspan="2">C3</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td>D2</td>
+        </tr>
+    </table>
+    <div style="background-color: aquamarine; border: black solid 2px">
+        bienvenue dans ma div
+    </div>
+    <div style="background-color: darkgray">
+        <p>bienvenue dans ma div2</p>
+        <p>blah blah......</p>
+    </div>
+    <div style="background-image: url('img/poulet-roti-frites.jpg')">
+            <p>bienvenue dans ma div2</p>
+            <p>blah blah......</p>
+    </div>
+</body>
+
+</html>
