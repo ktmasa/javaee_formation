@@ -1,0 +1,9 @@
+ecrire une page html avec un formulaire de commande de pizza
+
+un champ pour votre nom (ligne simple)
+un champ pour votre adresse (multi lignes)
+un choix déroulant pour la pizza choisie
+un deuxieme choix deroulant pour la taille de la pizza
+une case a cocher pour inclure ou pas de l'huile piquante
+
+un bouton d'envoie

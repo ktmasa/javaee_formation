@@ -1,0 +1,11 @@
+ecrire une page index.html dans un nouveau projet
+la page d'accueil (index.html) a:
+	un titre principal 'loncoto home page'
+	un paragraphe de présentation
+	un liens vers une page contacts.html
+	
+une page contact.html
+	un titre
+	et une tableau avec (nom, prenom, email, poste) de 3 personnes
+	une image en logo
+	un lien pour retourner a index.html

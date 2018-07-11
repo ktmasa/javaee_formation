@@ -1,0 +1,24 @@
+les formulaire html et les sites webs non statiques
+-----------------------------------------------------
+
+	- sites web statique: des fichier html fixes
+	
+	necéssité de généré les pages html en fonction de données
+	ou parametres -> pages dynamiques
+	
+-> serveur CGI (un programme qui accepte des arguments en entrée,
+et renvoie une page html) : executable
+-> par la suite, apparition de plate-forme permettant d'executer une logique
+de génération page:
+	php
+	java -> servlet/jsp
+	...
+	
+il faut un moyen donc de transmettre au serveur des informations
+	les formulaires HTML
+	c'est un ensemble de champ a remplir dans le navigateur
+	qui seront transmit au serveur lors de la soumission du formulaire
+	-> 2 grandes forme de formulaire/transmission
+		GET et POST
+	
+	
