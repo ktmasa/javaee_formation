@@ -1,0 +1,28 @@
+div {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+div#colonne1 {
+    background-color: rgb(157, 214, 157);
+    width: 40%;
+    float: left;
+ 
+}
+div#colonne2 {
+    background-color: rgb(147, 189, 238);
+    width: 40%;
+    float: left;
+}
+div#lignesuivante {
+    background-color: rgb(231, 203, 166);
+    width: 90%;
+    float: left;
+}
+
+div.colinside {
+    background-color: rgb(232, 233, 158);
+    width: 5cm;
+    float: right;
+}

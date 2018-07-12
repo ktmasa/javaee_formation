@@ -1,0 +1,12 @@
+exercice css 1
+--------------------
+designer une page web avec:
+ - un en-tete/menu en haut de page
+ - une colonne rubrique a gauche avec un ensemble de lien et un
+ formulaire
+ - une colonne a droite news, avec un ensemble de petit resumé de news
+ - une colonne centrale avec les articles a l'intérieur
+ bonus: 
+ - bonus: mettre en evidence via un effet visuel l'article survolé par
+ le curseur de la souris
+ 

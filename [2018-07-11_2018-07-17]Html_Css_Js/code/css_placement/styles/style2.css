@@ -1,0 +1,60 @@
+div {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+div#colonne1 {
+    background-color: rgb(157, 214, 157);
+    width: 30%;
+    height: 100px;
+    overflow: hidden;
+}
+div#colonne2 {
+    background-color: rgb(147, 189, 238);
+    width: 30%;
+    height: 200px;
+    overflow: auto;
+}
+div#lignesuivante {
+    background-color: rgb(231, 203, 166);
+}
+div.colinside {
+    background-color: rgb(232, 233, 158);
+    width: 30%;
+    height: 150px;
+    overflow: scroll;
+}
+
+div#popup1 {
+    background-color: rgb(178, 183, 187);
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 30%;
+    top: 50px;
+    z-index: 20;
+    border-radius: 10px 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0, 0.45);
+}
+div#popup2 {
+    background-color: rgb(230, 125, 125);
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 40%;
+    top: 80px;
+    z-index: 10;
+    border-radius: 10px 20px;
+}
+
+.important {
+    font-weight: bolder;
+    color: red;
+}
+
+.separe {
+    display: block;
+}
