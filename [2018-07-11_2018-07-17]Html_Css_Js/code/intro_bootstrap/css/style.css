@@ -5,3 +5,9 @@ body {
     padding: 40px 15px;
     text-align: center;
 }
+.boite1 {
+    background-color: bisque;
+}
+.boite2 {
+    background-color: coral;
+}
