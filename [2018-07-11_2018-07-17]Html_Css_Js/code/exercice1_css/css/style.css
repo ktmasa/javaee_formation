@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(235, 234, 234);
+    /* padding: 80px 10px 10px 10px;*/
+
+}
+
+div#entete {
+    background: linear-gradient(to right,pink, purple, lightsteelblue);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed; 
+    z-index: 100;
+    width: 100%;
+}
+
+h3.titresite {
+    text-align: center;
+    color: white;
+}
+
+button.menubutton {
+    background-color: rgb(33, 161, 29);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 4px;
+}
+button.menubutton:hover {
+    background-color: rgb(204, 236, 204);
+    color: black;
+}
+
+div.bigcolonne {
+    float: left;
+    border: solid black 2px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 140px 10px 10px 10px;
+}
+div#rubriques {
+    width: 20%;
+    background-color: aquamarine;
+}
+div#articles {
+    width: 40%;
+    background-color: burlywood
+}
+div#news {
+    width: 20%;
+    background-color: lightsteelblue
+}
+
+div.article {
+    margin-bottom: 20px;
+    background-color: beige;
+    border: solid blue 1px;
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+}
+
+div.article:hover {
+    border: dashed;
+    left: 5px;
+}
+
+a.rubriquelink {
+    display: block;
+    width: 80%;
+    text-align: center;
+}
+
+div.nouvelle {
+    margin-bottom: 10px;
+    background-color: rgb(230, 230, 104);
+    border: solid rgb(255, 0, 0) 1px;
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+ 
+}
