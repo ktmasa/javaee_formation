@@ -1,0 +1,44 @@
+
+div#divt1 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: background-color 3s, width 1s;
+
+}
+div#divt1:hover {
+    background-color: rgb(143, 143, 228);
+    width: 300px;
+}
+
+div#divt2 {
+    background-color: orange;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    transition: left 3s;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+    overflow: hidden;
+}
+
+div#divt2:hover {
+    left: 150px;
+}
+
+div#divt3 {
+    background-color: violet;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border: solid black 1px;
+    transform: rotate(30deg) scale(1, 1) translate(0px, 0px);
+    overflow: hidden;
+    transition: transform 3s;
+}
+div#divt3:hover {
+    transform: rotate(60deg) scale(1.5,1.5) translate(100px, 0px);
+    
+}
+ 

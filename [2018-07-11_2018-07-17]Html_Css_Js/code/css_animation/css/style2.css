@@ -1,0 +1,24 @@
+@keyframes premiere {
+    from {background-color: aquamarine;}
+    to {background-color: brown;}
+}
+
+@keyframes deuxieme {
+    0% {background-color: aquamarine; left:0px; top: 0px;}
+    25% {background-color: brown; left:100px; top: 0px;}
+    50% {background-color: chartreuse; left:100px; top: 100px;}
+    75% {background-color: gold;  left:0px; top: 100px;}
+    100% {background-color: aquamarine; left:0px; top: 0px;}
+}
+
+div#divt1 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: aquamarine;
+    overflow: hidden;  
+    border: solid black 1px;
+    animation-name: deuxieme;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
