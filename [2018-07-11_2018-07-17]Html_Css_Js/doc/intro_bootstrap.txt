@@ -1,0 +1,26 @@
+grille bootstrap
+------------------
+bootstrap permet un découpage pour la mise en place en 12 colonne
+decoupage aisé 12,6,4,3,2
+
+pour une ligne -> choisi la répartition pour faire 12 colonnes
+	-> classe CSS
+col-[xs,sm,md,lg]-[nbcolonnes]
+	xs -> faible resolution
+	sm -> resolution moyenne-faible
+	md -> resolution moyenne
+	lg -> resolution elevée
+	
+non seulement, ce découpage se fait au niveau du container
+	-> <div class="container"> .... </div>
+	une variante qui essaye de prendre toute la place disponible
+	-> <div class="container-fluid"> .... </div>
+ce decoupage peut etre "refait" dans les sous balise
+	-> sous-div -> redecouper en 12 colonnes
+	
+bootstrap fournit aussi tout un ensemble de classe css pour habiller
+les principaux composant: -> formulaire, liste, tableau, boutons, etc...
+
+	
+	
+

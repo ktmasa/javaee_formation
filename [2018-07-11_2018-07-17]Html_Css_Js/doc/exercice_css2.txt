@@ -1,0 +1,8 @@
+exercice css 2
+---------------------
+realiser le même site que dans l'exercice 1 en utilisant bootstrap
+a une différence près,
+	dans la colonne centrale, les articles peuvent etre afficher
+		1 par ligne si basse resolution
+		2 par lignes sinon
+		
