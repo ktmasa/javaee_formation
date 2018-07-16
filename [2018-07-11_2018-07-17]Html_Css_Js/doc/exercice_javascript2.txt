@@ -1,0 +1,21 @@
+exercice javascript 2
+----------------------
+ecrire une page html (css et javascript/bootstrap) permettant
+de saisir des localisations
+	-> pays
+	-> ville
+	-> codePostal
+	-> rue (incluant no rue)
+	
+et de les afficher au choix:
+	- dans une table
+	- sous un autre format
+	
+bonus:
+	- les pays sont proposés sous forme d'une liste déroulante
+	- validation code postal
+super bonus:
+	- pouvoir vider la liste, ou enlever une ligne en particulier
+	
+
+	
