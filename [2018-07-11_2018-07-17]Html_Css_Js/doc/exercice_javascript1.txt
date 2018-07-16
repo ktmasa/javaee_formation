@@ -1,0 +1,10 @@
+exercice javascript
+----------------------
+
+ecrire une page html (avec son javascript) calculatrice
+il y a 2 champs de saisie (valeur1 et valeur2)
+et 4 boutons -> addition, soustraction, multiplication,division
+une zonetexte (un div) pour afficher le résultat du claucl quand on clique
+sur une des operations
+
+rappel : Number(texte) -> convertir en chiffre en javascript
