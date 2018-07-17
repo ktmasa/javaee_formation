@@ -1,0 +1,7 @@
+body {
+    background-color: lightgray;
+}
+#dessin {
+    border: solid black 1px;
+    background-color: white;
+}
