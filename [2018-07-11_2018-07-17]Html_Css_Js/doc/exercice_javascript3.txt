@@ -1,0 +1,12 @@
+exercice javascript 3
+----------------------
+une page avec un canvas
+et un petit formulaire permettant de saisir une valeur numerique
+entre 0 et 100.
+
+chaque fois qu'une valeur est saisie (avec un bouton), elle est ajoutée
+dans un tableau javascript
+ par exemple [10, 50, 45, 20, 16...]
+ 
+dessiner un graphe avec ces valeurs dans le canvas
+
