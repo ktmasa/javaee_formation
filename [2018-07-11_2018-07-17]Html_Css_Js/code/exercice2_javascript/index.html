@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Loncoto map</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    ajout Localisation
+                </div>
+                <div class=" panel-body">
+                    <form>
+                       <div class="form-group">
+                        <label for="pays">pays</label>
+                        <select class="form-control" name="pays" id="pays">
+                            <option selected="selected">France</option>
+                            <option>Italie</option>
+                            <option>Espagne</option>
+                            <option>Allemagne</option>
+                            <option>Croatie</option>
+                        </select>
+                       </div>
+                       <br />
+                       <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon1">Ville</span>
+                        <input type="text" 
+                                class="form-control"
+                                placeholder="paris"
+                                aria-describedby="sizing-addon1" 
+                                name="ville" id="ville">
+                      </div>
+                      <br />
+                      <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon1">Code Postal</span>
+                        <input type="text" 
+                                class="form-control"
+                                placeholder="75000"
+                                aria-describedby="sizing-addon1" 
+                                name="codePostal" id="codePostal">
+                      </div>
+                      <br />
+                      <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="sizing-addon1">Rue</span>
+                        <input type="text" 
+                                class="form-control"
+                                placeholder="2 rue de la paix"
+                                aria-describedby="sizing-addon1" 
+                                name="rue" id="rue">
+                      </div>
+                      <br />
+                      <button id="btClear" class="btn btn-danger btn-block">vider liste</button>
+                      <button id="btAdd" class="btn btn-success btn-block">ajouter localisation</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped"
+                     id="localisations"
+                     border="1">
+                <thead>
+                    <tr>
+                        <td>PAYS</td>
+                        <td>VILLE</td>
+                        <td>CP</td>
+                        <td>RUE</td>
+                        <td>ACTION</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
