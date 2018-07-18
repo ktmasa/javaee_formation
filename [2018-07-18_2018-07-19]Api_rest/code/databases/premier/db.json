@@ -1,0 +1,8 @@
+{
+	"contacts" : [
+		{ "id": 1, "nom": "courtalon", "prenom": "vincent" },
+		{ "id": 2, "nom": "willis", "prenom": "bruce" },
+		{ "id": 3, "nom": "dujardin", "prenom": "jean" },
+		{ "id": 4, "nom": "smith", "prenom": "will" }
+	]
+}

@@ -1,0 +1,38 @@
+serveur API REST/JSON
+
+une application avec base de donnée, etc....qui expose
+les données sous forme d'une api rest/json
+
+json-server est une petite application qui utilise un fichier json
+comme si c'était une mini-base de donnée, et l'expose en api rest/json
+
+fichier json :
+	javascript object notation
+
+API rest/json, une maniere d'organiser nos URL/parametres pour
+requeter des données, qu'on appelle des resources
+
+url GET: /{resource name}  -> liste des enregistrement en json
+url GET: /{resource name}/{id}  -> l'enregistrement recherché
+
+----------------------------------------
+il faut, depuis notre application "front" requeter le serveur
+
+au début de html, c'était impossible
+	a l'origine, le javascript devais travailler uniquement
+	avec ce qui est fournit au chargement de la page
+	
+introduction d'ajax -> asynchronous javascript and XML
+	possibilité, via javascript, de requetter un serveur sans
+	rafraichir la page complete
+
+	objet de requetage: XML HTTP Request
+	
+
+
+
+
+
+
+
+
