@@ -1,0 +1,39 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "nom": "tofu tout fou",
+      "prix": 29.99,
+      "poids": 1,
+      "stock": 4
+    },
+    {
+      "id": 3,
+      "nom": "steak de lama",
+      "prix": 39.99,
+      "poids": 1,
+      "stock": 3
+    },
+    {
+      "nom": "steak de bison",
+      "prix": "45.99",
+      "poids": "2.5",
+      "stock": "8",
+      "id": 4
+    },
+    {
+      "nom": "steak de mamouth",
+      "prix": "23.99",
+      "poids": "2.5",
+      "stock": "8",
+      "id": 5
+    },
+    {
+      "nom": "steak de bison",
+      "prix": "45.99",
+      "poids": "0.5",
+      "stock": "10",
+      "id": 6
+    }
+  ]
+}

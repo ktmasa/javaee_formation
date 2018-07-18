@@ -1,9 +1,10 @@
 exercice 2 rest
 --------------------
 creer une base produit
-	id, nom, prix, poids, stock
+	id, nom, prix, poids, stock(entier)
 
 ecrire la page html permettant, via requette ajax, le listage,
 creation et effacement de produits
 
+bonus: validation prix,poids et stock
 	
