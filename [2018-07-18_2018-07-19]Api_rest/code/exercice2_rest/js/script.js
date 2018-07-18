@@ -18,7 +18,7 @@ function deleteProduit() {
 
 function createProduit() {
     var produit = new Produit(0);
-    if (produit.fillFromForm(true)) {
+    if (produit.fillFromForm()) {
         $.post("http://localhost:3000/produits", produit.toJson(), function() {
             get_produits();
         });

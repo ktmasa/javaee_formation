@@ -30,9 +30,9 @@
     },
     {
       "nom": "steak de bison",
-      "prix": "45.99",
-      "poids": "0.5",
-      "stock": "10",
+      "prix": "23.99",
+      "poids": "2.5",
+      "stock": "3",
       "id": 6
     }
   ]

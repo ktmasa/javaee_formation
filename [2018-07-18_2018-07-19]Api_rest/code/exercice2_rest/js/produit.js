@@ -6,6 +6,7 @@ function Produit(id, nom, prix, poids, stock) {
     this.poids = poids;
     this.stock = stock;
 
+    // generer une ligne du tableau
     this.genererLigne = function () {
         var tr = $("<tr></tr>");
         tr.append("<td>" + this.id + "</td>");
@@ -13,69 +14,51 @@ function Produit(id, nom, prix, poids, stock) {
         tr.append("<td>" + this.prix + "</td>");
         tr.append("<td>" + this.poids + "</td>");
         tr.append("<td>" + this.stock + "</td>");
+        // cellule du tableau contenant les boutons
         var td = $("<td></td>");
-        td.append(this.generateButton("btn-danger",
-                "deleteproduit",
-                "glyphicon glyphicon-trash",
-                "l_"));
+        td.append(generateButton("btn-danger",
+            "deleteproduit",
+            "glyphicon glyphicon-trash",
+            "l_" + id));
 
-        td.append(this.generateButton("btn-primary",
-                "editproduit",
-                "glyphicon glyphicon-pencil",
-                "e_"));
+        td.append(generateButton("btn-primary",
+            "editproduit",
+            "glyphicon glyphicon-pencil",
+            "e_" + id));
+        // ajout dans la ligne du tableau
         tr.append(td);
         return tr;
     };
-    this.generateButton = function (btnclassbt, btnclass, icon, prefix) {
-        return $("<button class='btn " + btnclassbt + " " + btnclass
-            + "' id='" + prefix + this.id + "'><span class='"
-            + icon + "'> </span></button>");
-    }
+
 
     // lire les champs et remplir l'objet
-    this.fillFromForm = function (validate) {
+    this.fillFromForm = function () {
         var valid = true;
-        if (validate) {
-            var c_prix = Number($("#prix").val());
-            if (isNaN(c_prix) || c_prix < 0) {
-                valid = false;
-                $("#prix").addClass("champErreur");
-            }
-            else {
-                this.prix = c_prix;
-                $("#prix").removeClass("champErreur");
-            }
-            //------------------------------------------------
-            var c_poids = Number($("#poids").val());
-            if (isNaN(c_poids) || c_poids < 0) {
-                valid = false;
-                $("#poids").addClass("champErreur");
-            }
-            else {
-                this.poids = c_poids;
-                $("#poids").removeClass("champErreur");
-            }
-            //------------------------------------------------
-            var c_stock = Number($("#stock").val());
-            if (isNaN(c_stock) || c_stock < 0) {
-                valid = false;
-                $("#stock").addClass("champErreur");
-            }
-            else {
-                this.stock = c_stock;
-                $("#stock").removeClass("champErreur");
-            }
+        if (checkPositive("prix")) {
+            this.prix = Number($("#prix").val());
         }
         else {
-            this.prix = Number($("#prix").val());
+            valid = false;
+        }
+        //------------------------------------------------
+        if (checkPositive("poids")) {
             this.poids = Number($("#poids").val());
+        }
+        else {
+            valid = false;
+        }
+        //------------------------------------------------
+        if (checkPositive("stock")) {
             this.stock = Number($("#stock").val());
+        }
+        else {
+            valid = false;
         }
         this.nom = $("#nom").val();
         return valid;
     };
 
-
+    // version json de l'objet
     this.toJson = function () {
         return {
             "nom": this.nom,
@@ -83,5 +66,5 @@ function Produit(id, nom, prix, poids, stock) {
             "poids": this.poids,
             "stock": this.stock
         };
-    }
+    };
 }
