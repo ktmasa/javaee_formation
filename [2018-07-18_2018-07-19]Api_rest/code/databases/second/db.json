@@ -1,0 +1,46 @@
+{
+  "livres": [
+    {
+      "id": 2,
+      "titre": "tofu creatif",
+      "auteur": "son gohan",
+      "prix": 29.99
+    },
+    {
+      "id": 3,
+      "titre": "java commando",
+      "auteur": "vegeta",
+      "prix": 24.99
+    },
+    {
+      "id": 4,
+      "titre": "javascript relax",
+      "auteur": "tortue geniale",
+      "prix": 15.99
+    },
+    {
+      "id": 5,
+      "titre": "css feng shui",
+      "auteur": "krilin",
+      "prix": 39.99
+    },
+    {
+      "titre": "sql shaolin",
+      "auteur": "tenshinhan",
+      "prix": "23.99",
+      "id": 6
+    },
+    {
+      "titre": "typescript ninja",
+      "auteur": "freezer",
+      "prix": "43.99",
+      "id": 7
+    },
+    {
+      "titre": "uml passion",
+      "auteur": "dende",
+      "prix": "16.99",
+      "id": 8
+    }
+  ]
+}

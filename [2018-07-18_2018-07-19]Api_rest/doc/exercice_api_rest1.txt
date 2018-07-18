@@ -3,6 +3,6 @@ exercice api rest 1
 une "base de donnee" json contenant des livres
 livre -> id, titre, auteur, prix
 
-creer le fichier db.json, lancer ke json-server
+creer le fichier db.json, lancer le json-server
 ecrire une page html+javascript permettant d'afficher
 via une requette ajax, la liste des livres dans une table html
