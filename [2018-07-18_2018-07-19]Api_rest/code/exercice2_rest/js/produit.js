@@ -16,15 +16,8 @@ function Produit(id, nom, prix, poids, stock) {
         tr.append("<td>" + this.stock + "</td>");
         // cellule du tableau contenant les boutons
         var td = $("<td></td>");
-        td.append(generateButton("btn-danger",
-            "deleteproduit",
-            "glyphicon glyphicon-trash",
-            "l_" + id));
-
-        td.append(generateButton("btn-primary",
-            "editproduit",
-            "glyphicon glyphicon-pencil",
-            "e_" + id));
+        td.append(generateDeleteButton("deleteproduit", id));
+        td.append(generateEditButton("editproduit", id));
         // ajout dans la ligne du tableau
         tr.append(td);
         return tr;
@@ -35,21 +28,21 @@ function Produit(id, nom, prix, poids, stock) {
     this.fillFromForm = function () {
         var valid = true;
         if (checkPositive("prix")) {
-            this.prix = Number($("#prix").val());
+            this.prix = readNumberField("prix");
         }
         else {
             valid = false;
         }
         //------------------------------------------------
         if (checkPositive("poids")) {
-            this.poids = Number($("#poids").val());
+            this.poids = readNumberField("poids");
         }
         else {
             valid = false;
         }
         //------------------------------------------------
         if (checkPositive("stock")) {
-            this.stock = Number($("#stock").val());
+            this.stock = readNumberField("stock");
         }
         else {
             valid = false;

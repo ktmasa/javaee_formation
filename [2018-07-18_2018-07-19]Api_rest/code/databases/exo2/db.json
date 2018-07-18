@@ -29,10 +29,10 @@
       "id": 5
     },
     {
-      "nom": "steak de bison",
-      "prix": "23.99",
-      "poids": "2.5",
-      "stock": "3",
+      "nom": "bière aux algues",
+      "prix": "5.99",
+      "poids": "0.5",
+      "stock": "12",
       "id": 6
     }
   ]

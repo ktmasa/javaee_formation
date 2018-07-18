@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function deleteProduit() {
-    var id = Number($(this).attr("id").substring(2));
+    var id = Number($(this).attr("dataid"));
     $.ajax({
         url: "http://localhost:3000/produits/" + id,
         type: "DELETE",
