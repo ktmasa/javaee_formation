@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titre": "tofu tout fou",
+      "corps": "super tofu, a tester",
+      "auteur": "nobunaga"
+    },
+    {
+      "id": 2,
+      "titre": "steak de lama",
+      "corps": "il l'a bien mérité",
+      "auteur": "haddock"
+    }
+  ],
+  "auteurs": [
+    {
+      "id": 1,
+      "nom": "nobunaga"
+    },
+    {
+      "id": 2,
+      "nom": "haddock"
+    }
+  ]
+}

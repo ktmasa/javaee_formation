@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Loncoto map</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/utils.js" type="text/javascript"></script>
+    <script src="js/post.js" type="text/javascript"></script>
+    <script src="js/auteur.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    edition Post
+                </div>
+                <div class=" panel-body">
+                    <button class="btn btn-success" id="refresh">rafraichir liste</button><br />
+                    <br />
+                    <form>
+                        <input type="hidden" name="id" id="id" />
+                        <div class="form-group">
+                            <label for="titre">titre post</label>
+                            <input type="text" class="form-control" name="titre" id="titre" />
+                        </div>
+                        <div class="form-group">
+                            <label for="corps">corps post</label>
+                            <textarea rows="5" cols="50" class="form-control" name="corps" id="corps"></textarea>
+                        </div>
+                        <div class="form-group" id="auteurselect">
+                            <label for="auteur">auteur post</label>
+                        </div>
+                        <button id="createpost" class="btn btn-primary btn-block">sauver post</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped" id="tableposts" border="1">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>TITRE</td>
+                        <td>CORPS</td>
+                        <td>AUTEUR</td>
+                        <td>ACTION</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
