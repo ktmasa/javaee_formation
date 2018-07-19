@@ -2,7 +2,7 @@ exercice api rest 3
 -------------------------
 
 ecrire une application de type "blog"
-Post(id, titre, corps, auteur: string)
+Post(id, titre, corps ou contenu, auteur: string)
 
 version simple:
 	operation crud sur  les post
