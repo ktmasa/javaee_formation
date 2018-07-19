@@ -16,12 +16,13 @@
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    ajout Produit
+                    edition Produit
                 </div>
                 <div class=" panel-body">
                     <button class="btn btn-success" id="refresh">rafraichir liste</button><br />
                     <br />
                     <form>
+                        <input type="hidden" name="id" id="id" />
                         <div class="form-group">
                             <label for="nom">nom produit</label>
                             <input type="text" class="form-control" name="nom" id="nom" />
@@ -38,7 +39,7 @@
                             <label for="stock">stock produit</label>
                             <input type="text" class="form-control" name="stock" id="stock" />
                         </div>
-                        <button id="createproduit" class="btn btn-primary btn-block">creer produit</button>
+                        <button id="createproduit" class="btn btn-primary btn-block">sauver produit</button>
                         </form>
                 </div>
             </div>

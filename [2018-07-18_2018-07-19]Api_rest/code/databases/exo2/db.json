@@ -22,18 +22,25 @@
       "id": 4
     },
     {
-      "nom": "steak de mamouth",
-      "prix": "23.99",
-      "poids": "2.5",
-      "stock": "8",
-      "id": 5
+      "nom": "bière aux algues oceania",
+      "prix": "6.99",
+      "poids": "0.5",
+      "stock": "20",
+      "id": 6
     },
     {
-      "nom": "bière aux algues",
-      "prix": "5.99",
+      "nom": "saumon au colorants",
+      "prix": "15.99",
       "poids": "0.5",
       "stock": "12",
-      "id": 6
+      "id": 7
+    },
+    {
+      "nom": "miel des carpathes",
+      "prix": "9.99",
+      "poids": "0.5",
+      "stock": "40",
+      "id": 8
     }
   ]
 }

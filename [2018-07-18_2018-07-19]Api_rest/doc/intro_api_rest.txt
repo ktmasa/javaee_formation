@@ -27,10 +27,32 @@ introduction d'ajax -> asynchronous javascript and XML
 	rafraichir la page complete
 
 	objet de requetage: XML HTTP Request
+	actuellement, plutot du json
 	
+probleme:
+	dans les tous les navigateurs, le javascript est mono-threadé
+	par page
+	
+	il ne faut absolument pas, ou le moins possible "bloquer"
+	l'execution du javascript de la page.
+	
+GET -> lire
+
+GET 	/produits   -> liste des produits
+GET 	/produits/3		-> lire le produit d'identifiant no 3
+DELETE 	/produits/3		-> efface le produit no 3
+POST	/produits (objet json) -> inserer un nouveau produit
+PUT		/produits/3 (objet json) -> mettre a jour le produit no3
 
 
-
+quand on fait une edition
+	-> demander au serveur les details du produit
+GET 	/produits/3
+	-> remplir le formulaire
+sauvegarde
+PUT 	/produits/3  (objet produit en json modifié)
+GET 	/produits  -> refraichir la liste
+	
 
 
 
