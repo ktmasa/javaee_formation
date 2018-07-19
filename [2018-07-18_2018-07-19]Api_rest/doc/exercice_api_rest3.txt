@@ -1,0 +1,20 @@
+exercice api rest 3
+-------------------------
+
+ecrire une application de type "blog"
+Post(id, titre, corps, auteur: string)
+
+version simple:
+	operation crud sur  les post
+	affichage standard des post dans une table
+	
+optionnel:
+	personnaliser l'affichage, les posts apparaissent sous
+	forme de div/panel et non plus table
+
+plus difficile
+	fournir aussi une liste déroulante d'auteur pour
+	choisir l'auteur d'un post
+	avec possibilité de creer des nouveaux auteurs
+	
+possibilité de filtrer les post par auteurs

@@ -1,0 +1,24 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "nom": "tofu tout fou",
+      "prix": 29.99,
+      "poids": 1,
+      "stock": 4
+    },
+    {
+      "id": 3,
+      "nom": "steak de lama",
+      "prix": 39.99,
+      "poids": 1,
+      "stock": 3
+    }
+  ],
+  "categories" : [
+	{ 
+		"id": 1,
+	   "libelle": "divers"
+	}
+  ]
+}
