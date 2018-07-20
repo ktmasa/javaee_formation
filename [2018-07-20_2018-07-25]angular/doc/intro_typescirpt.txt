@@ -1,0 +1,9 @@
+typescript
+----------------
+ javascript amélioré
+ tout code javascript est du code typescript valide
+ 
+	- typage plus fort (declarer les type des variables)
+	- plus de type a disposition
+	- mecanisme complet de classe/heritage et visibilité
+	- le backquote '`' permet de faire du texte multiligne

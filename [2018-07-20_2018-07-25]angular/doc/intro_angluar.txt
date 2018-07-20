@@ -1,0 +1,35 @@
+Angular
+--------------
+-> Framework de developpement d'application front en javascript
+développé par google
+
+a l'origine, (angular 1.x) html + javascript
+angular 1 -> angular 2+
+angular 2+ et pas avec angular.js (1.x)
+
+différence majeure
+	-> typescript
+
+typescript -> compilé/transpilé -> javascript
+	packagé -> webpack
+	
+typescript -> microsoft
+
+pour angular: angular-cli
+	(outils de generation et developpement angular)
+
+angular a une organisation bien spécifique:
+	-> mecanisme de "binding" entre html et code automatique
+	base de "template" html
+	-> angular enrichit le html avec ses propres balises
+	exemple
+	<li *ngfor="......">{{auteur.nom}}</li>
+	
+decoupage en composant et services.
+	un composant est responsable de l'affichage d'une partie de la page
+	un service n'est pas responsable d'une partie de la page, mais
+	fournit des fonctionnalité au reste des composants
+	
+	
+	
+	

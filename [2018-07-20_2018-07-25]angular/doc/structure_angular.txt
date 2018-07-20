@@ -1,0 +1,51 @@
+projet angular
+
+A) creer un projet
+	ng new nomProjet
+	
+cela creer le repertoire, les principaux fichier et un composant "racine"
+	app-root
+	
+dans le projet)
+	ng serve -> lancer le serveur
+	
+-> src/app
+	-> components : tous mes composants
+	-> services : tous mes services
+	-> metier : pour les classes metier (Film, produit, etc...)
+	
+un composant:
+	un objet responsable d'une partie de la page html
+		-> une feuille de style  		comp.css
+		-> une morceau de html  		comp.html
+		-> la logique de ce composant	comp.ts
+	
+	si j'ai un composant "displayFilm"
+		-> avec un selecteur "app-display-film"
+		je peu le place n'importe ou dans le html
+		avec <app-display-film></app-display-film>
+	
+je peu injecter des service nécéssaire a mon composant en les
+mettant en parametre de mon constructeur du composant
+
+ng generate component <nom du composant>
+
+-------------------------------------------
+un service est un objet injectable dans les composants
+de l'application, utilie pour des fonctionalités partagées
+@injectable devant la classes
+
+ng generate service <nom service>
+
+---------------------------------------------
+pour installer bootstrap
+
+ --save -> ecrire dans le package.json
+ 
+npm install --save bootstrap@3.3.7
+il faut rajouter le css dans le fichier angular.json (style)
+
+
+
+
+	

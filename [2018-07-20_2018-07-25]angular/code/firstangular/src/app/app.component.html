@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div>
+  <h2>{{ message }}</h2>
+  <input type="text" [(ngModel)]="salutation"  name="salutation"/><br />
+  <h2> {{ salutation }} </h2>
+  <div>
+    nouvelle saisie: <input type="text" [(ngModel)]="saisie" name="saisie" />
+    <button (click)="addSaisie()" >ajouter saisie</button><br/>
+    <ul>
+      <li *ngFor="let course of courses">{{course}}</li>
+    </ul>
+  </div>
+
+  <app-pied-page></app-pied-page>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      {{ title }}
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>TITRE</th>
+            <th>REALISATEUR</th>
+            <th>ANNEE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let film of films">
+            <td>{{film.id}}</td>
+            <td>{{film.titre}}</td>
+            <td>{{film.realisateur}}</td>
+            <td>{{film.annee}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

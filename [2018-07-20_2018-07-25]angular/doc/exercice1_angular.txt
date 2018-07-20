@@ -1,0 +1,19 @@
+exercice 1 angular 
+------------------
+creer une application agular avec
+	une liste de localisations
+		(id, rue, ville, codepostal, pays)
+	et un compteur de localisations
+decouper en 3 composants
+	-> root
+		-> displaylist
+		- displaycompteur
+	
+un service pour obtenir la liste des localisations
+l'objet metier localisations
+
+bonus: avec bootstrap
+
+le but est de PRATIQUER les commandes et la structure du projet
+bien le recreer de A à Z
+	
