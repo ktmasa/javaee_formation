@@ -10,12 +10,18 @@ import { FilmRepositoryService } from './services/film-repository.service';
 export class AppComponent implements OnInit
 {
   title = 'allo quoi cine';
+  // formulaire affiché ou pas ?
+  public formulaireVisible : boolean;
 
   constructor() {
   }
 
   ngOnInit(): void {
-   }
+    this.formulaireVisible = false;
+  }
 
+  public nouveauFilm() {
+    this.formulaireVisible = true;
+  }
 
 }

@@ -1,0 +1,27 @@
+communication dans une application angular
+-------------------------
+component -> morceau de page
+service -> injecté dans component
+
+pour avoir une communication "persistente"
+continuer a etre prévenu quand il y a de nouvelles données
+on va passer par un flux de communication type 'souscription'
+
+en angular:
+	la source de donnée est un 'subject'
+	auquel on peut s'abonner
+	
+	le behaviorsubject est une variation du sujet qui renvoie
+	au premier abonnement/souscription la derniere donnée sujet
+	
+	
+celui qui veut "observer/suivre" ce sujet, va souscrire a celui-ci
+via un observable. un Observable peut etre souscris/observé, un sujet
+est un observable
+
+par la suite, on peu se désébonner d'un observable si on le souhaite
+cela passe par la 'subscription'
+
+
+	
+

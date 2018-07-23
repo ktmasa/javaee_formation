@@ -1,7 +1,13 @@
 <div class="container">
-  <app-films-counter></app-films-counter>
+  <div class="row well" *ngIf="formulaireVisible">
+    <app-films-edit></app-films-edit>
+  </div>
+  <div class="row">
+      <app-films-counter></app-films-counter>
+  </div>
   <div class="row">
     <!-- j'inclus le sous composant films-display -->
     <app-films-display></app-films-display>
+    <button (click)="nouveauFilm()" class="btn btn-primary">nouveau film</button>
   </div>
 </div>

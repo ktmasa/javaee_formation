@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { FilmRepositoryService } from './services/film-repository.service';
@@ -15,7 +16,8 @@ import { FilmsCounterComponent } from './components/films-counter/films-counter.
     FilmsCounterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     FilmRepositoryService
