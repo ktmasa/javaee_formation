@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let loc of localisations">
+        <tr *ngFor="let loc of localisationsObservable | async">
           <td>{{loc.id}}</td>
           <td>{{loc.rue}}</td>
           <td>{{loc.codePostal}}</td>

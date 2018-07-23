@@ -5,3 +5,13 @@ exercice 2 angular
 -> passer par des objervables pour que la page se rafraichisse
 correctement.
 
+etapes
+------------------------
+A) generer le composant d'edition (n'oubliez pas le formsModule!!)
+B) editer le html du composant pour creer le formulaire
+C) ajouter le fonction permettant de sauver une nouvelle localisation
+D) bonus(afficher le formulaire en cliquant sur bouton)
+E) transfomer la liste des localisation en Subject et observable
+dans le service
+F) mettre a jour les composants liste et compteur pour qu'ils
+utilisent l'observable

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalisationRepositoryService } from '../../services/localisation-repository.service';
 import { Localisation } from '../../metier/localisation';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-localisation-display-list',
@@ -10,8 +11,7 @@ import { Localisation } from '../../metier/localisation';
 export class LocalisationDisplayListComponent implements OnInit {
 
   public titre : string;
-  public localisations : Array<Localisation>;
-
+  public localisationsObservable : Observable<Array<Localisation>>;
   
   // les arguments du constructeur d'un component seront automatiquement
   // injecté par angular (souvent déclaré dans "providers")
@@ -20,7 +20,7 @@ export class LocalisationDisplayListComponent implements OnInit {
   ngOnInit() {
     this.titre = "liste des localisations";
     // récupération du tableau des localisation depuis le service localisationRepository
-    this.localisations = this.localisationRepository.getLocalisations();
+    this.localisationsObservable = this.localisationRepository.getLocalisationsObservable();
   }
 
 }
