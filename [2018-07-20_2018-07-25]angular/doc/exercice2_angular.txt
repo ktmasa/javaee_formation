@@ -1,0 +1,7 @@
+exercice 2 angular
+-------------------
+1) ajouter un composant edition de localisation
+2) pouvoir ajouter une nouvelle localisation
+-> passer par des objervables pour que la page se rafraichisse
+correctement.
+
