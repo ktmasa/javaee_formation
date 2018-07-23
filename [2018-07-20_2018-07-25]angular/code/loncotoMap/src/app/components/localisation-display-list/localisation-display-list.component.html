@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    {{titre}}
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped" border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>RUE</th>
+          <th>CP</th>
+          <th>VILLE</th>
+          <th>PAYS</th>
+          <th>actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let loc of localisations">
+          <td>{{loc.id}}</td>
+          <td>{{loc.rue}}</td>
+          <td>{{loc.codePostal}}</td>
+          <td>{{loc.ville}}</td>
+          <td>{{loc.pays}}</td>
+          <td>actions...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
