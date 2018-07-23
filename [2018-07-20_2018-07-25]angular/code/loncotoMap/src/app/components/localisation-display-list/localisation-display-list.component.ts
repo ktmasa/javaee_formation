@@ -23,4 +23,7 @@ export class LocalisationDisplayListComponent implements OnInit {
     this.localisationsObservable = this.localisationRepository.getLocalisationsObservable();
   }
 
+  public removeLoc(id : number) {
+    this.localisationRepository.removeLocalisation(id);
+  }
 }

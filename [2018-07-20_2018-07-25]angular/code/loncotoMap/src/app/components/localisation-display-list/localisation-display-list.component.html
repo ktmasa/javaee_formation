@@ -21,7 +21,9 @@
           <td>{{loc.codePostal}}</td>
           <td>{{loc.ville}}</td>
           <td>{{loc.pays}}</td>
-          <td>actions...</td>
+          <td>
+            <button (click)="removeLoc(loc.id)" class="btn btn-danger">remove</button>
+          </td>
         </tr>
       </tbody>
     </table>

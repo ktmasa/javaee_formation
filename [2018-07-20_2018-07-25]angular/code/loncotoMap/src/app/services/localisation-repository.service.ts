@@ -34,4 +34,15 @@ export class LocalisationRepositoryService {
     this.localisationSubject.next(this.localisations);
     console.log(this.localisations);
   }
+
+  public removeLocalisation(id : number) {
+    // rechercher l'index de la localisation avec le bon id
+    let index = this.localisations.findIndex(loc => loc.id == id);
+    if (index >= 0) {
+      this.localisations.splice(index, 1);
+      // je previens tous ceux qui ecoute le sujet
+      this.localisationSubject.next(this.localisations);
+    }
+
+  }
 }
