@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public currentEditId : number;
+
+  public constructor() {
+    this.currentEditId = 0;
+  }
+
+  public editRequested(id: number) {
+    console.log("recus demande edition localisation no " + id);
+    this.currentEditId = id;
+  }
 }

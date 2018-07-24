@@ -1,12 +1,14 @@
 <div class="container">
   <div class="row well">
-    <app-edit-localisation></app-edit-localisation>
+    <app-edit-localisation 
+        [editId]="currentEditId"></app-edit-localisation>
   </div>
   <div class="row">
     <app-localisation-counter></app-localisation-counter>
   </div>
   <div class="row">
-    <app-localisation-display-list></app-localisation-display-list>
+    <app-localisation-display-list 
+          (editRequired)="editRequested($event)"></app-localisation-display-list>
   </div>
 </div>
 

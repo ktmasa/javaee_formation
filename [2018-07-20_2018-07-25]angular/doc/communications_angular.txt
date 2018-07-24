@@ -22,6 +22,35 @@ est un observable
 par la suite, on peu se désébonner d'un observable si on le souhaite
 cela passe par la 'subscription'
 
+------------------------------------
+il existe aussi un mecanisme pour communiquer
+entre composant parent et enfant, composant conteneur et contenu
+	pour propager un evement du html vers le composant,
+	ou du composant enfant vers le parent
+	il faut déclarer une propriété @output de type
+	EventEmiter
+	
+	le composant enfant pourra emettre des donnée via cet
+	eventEmitter
+	si le composant parent ecoute cet evenement
+	(nom output)="code a rappeler($event)"
+	alors il sera prévenu et recevr la donnée transmise
+	par le composant enfant
+	
+	c'est le binding "remontant" , toujours avec () dans le html
+	
+inversement, pour transmettre d'un composant parent vers l'enfant
+ou du composant vers le html, c'est [] qui est utilisé
+dans un composant enfant, une telle propriété devra être annoté
+avec @Input.
+
+ATTENTION, si le composant enfant n'est pas "reinitialisé", il faut
+implementer onChange pour etre prévenu dans le composant enfant des 
+modifications de ces inputs
+
+	
+
+
 
 	
 

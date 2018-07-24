@@ -1,0 +1,9 @@
+exercice 3 angular
+-------------------------
+ecrire application angular permettant d'editer/supprimer/ajouter
+des employe à une liste
+	employe : id, nom, prenom, email, salaire(number)
+	
+bonus:
+	un employe peut etre affecté a un poste
+	

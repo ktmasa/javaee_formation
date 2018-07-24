@@ -22,6 +22,7 @@
           <td>{{loc.ville}}</td>
           <td>{{loc.pays}}</td>
           <td>
+            <button (click)="editLoc(loc.id)" class="btn btn-success">edit</button>
             <button (click)="removeLoc(loc.id)" class="btn btn-danger">remove</button>
           </td>
         </tr>

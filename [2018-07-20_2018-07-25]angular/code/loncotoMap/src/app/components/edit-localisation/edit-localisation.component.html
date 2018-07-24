@@ -33,6 +33,6 @@
            [(ngModel)]="currentLoc.pays" />
   </div>
   
-  <button class="btn btn-warning" >annuler</button>
+  <button class="btn btn-warning" (click)="cancelLoc()" >annuler</button>
   <button class="btn btn-success" (click)="saveLoc()">sauver</button>
 </form>

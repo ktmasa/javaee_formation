@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Localisation } from '../metier/localisation';
+import { Localisation, Localisation } from '../metier/localisation';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class LocalisationRepositoryService {
   private localisations : Array<Localisation>;
   private localisationSubject : BehaviorSubject<Array<Localisation>>;
+  private currentId : number;
 
   public constructor() { 
     this.localisations = [
@@ -16,6 +17,7 @@ export class LocalisationRepositoryService {
       new Localisation(3, "3 rue du cassoulet", "31100", "toulouse", "france"),
       new Localisation(4, "25 rue du muscle", "45345", "hollywood", "etats-unis")
     ];
+    this.currentId = 5;
     this.localisationSubject = new BehaviorSubject(this.localisations);
   }
   
@@ -29,10 +31,32 @@ export class LocalisationRepositoryService {
   }
 
   public addLocalisation(localisation : Localisation) {
-    localisation.id = this.localisations.length + 1;
+    localisation.id = this.currentId;
+    this.currentId += 1;
     this.localisations.push(localisation);
     this.localisationSubject.next(this.localisations);
     console.log(this.localisations);
+  }
+
+  public updateLocalisation(localisation : Localisation) {
+    // je retrouve la ligne/localisation a mettre a jour dans le tableau
+    let index = this.localisations.findIndex(loc => loc.id == localisation.id);
+    if (index >= 0) {
+      this.localisations[index].copyFrom(localisation);
+    }
+  }
+
+  public findById(id : number) : Localisation {
+    let index = this.localisations.findIndex(loc => loc.id == id);
+    if (index >= 0) {
+      // retourner la localisation trouvée
+      let loc : Localisation = new Localisation(0,"","","","");
+      loc.copyFrom(this.localisations[index]);
+      return loc;
+    }
+    else {
+      return null;
+    }
   }
 
   public removeLocalisation(id : number) {

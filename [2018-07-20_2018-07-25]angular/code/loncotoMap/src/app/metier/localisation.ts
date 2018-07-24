@@ -6,4 +6,12 @@ export class Localisation {
                         public codePostal : string,
                         public ville : string,
                         public pays: string) {}
+    
+    public copyFrom(other : Localisation ) {
+        this.id = other.id;
+        this.rue = other.rue;
+        this.codePostal = other.codePostal;
+        this.ville = other.ville;
+        this.pays = other.pays;
+    }
 }
