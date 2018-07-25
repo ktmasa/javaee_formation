@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    liste des employes
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped" border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NOM</th>
+          <th>PRENOM</th>
+          <th>EMAIL</th>
+          <th>SALAIRE</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employes | async">
+          <td>{{emp.id}}</td>
+          <td>{{emp.nom}}</td>
+          <td>{{emp.prenom}}</td>
+          <td>{{emp.email}}</td>
+          <td>{{emp.salaire}}</td>
+          <td>
+            <button class="btn btn-success" (click)="editRequested(emp.id)">editer</button>
+            <button class="btn btn-danger" (click)="removeEmploye(emp.id)">remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

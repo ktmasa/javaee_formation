@@ -1,0 +1,115 @@
+guide projet angular
+------------------------
+si on creer un projet
+	#ng new nom_projet
+	creer le squelette du projet et telecharge les dependances
+	
+si on recuper un projet depuis git
+	npm install
+	telecharge les dependances (package.json)
+	
+---------------
+en général, on débute par les modeles, ou objet metier
+par exemple, classe Employe, Produit, Film, etc.
+au minimum un objet metier sert a contenir les donnée de l'entité
+	id, nom, prix....
+	definir attribut et/ou constructeur
+	
+souvent, quelques autres fonctions peuvent etre nécéssaire
+	copy, toJson...
+
+on pourrait utiliser ng generate class, mais c'est un simple fichier
+a creer dans ce cas.
+attention: n'oubliez pas le export devant class, et le constructeur
+ne doit pas être privé
+
+-----------------
+l'etape suivant est souvent de mettre en place un service de type crud
+pour vos objet metier
+	-> il n'est pas obligatoire qu'il soit complet
+	
+pour generer un service:
+	ng generate service ProduitRepository
+
+en général, si le repository expose une liste d'objet metier
+on passe par un subject (ou behaviourSubject) car il permettra
+de rafraichir les composant affichant cette liste automatiquement
+lorsqu'elle sera modifiée
+
+ce subject n'est pas accessible publiquement, mais exposé en général
+via une méthode publique du service sous le forme d'un observable
+l'avantage d'un observable est que l'on ne peut que l'observer, et non
+publier dedans
+
+----------------
+une fois le(s) service(s) mis en place
+on peut s'attaquer au components
+ce sont les objets responsable de l'affichage de page et des interactions
+un composant est responsable d'une partie de la page html, et
+peut utiliser d'autre sous-composant pour deleguer une sous partie de
+sa page
+
+si un composant a besoin d'acceder a un service, comme un repository
+par exemple, il faut le déclarer comme argument de son constructeur
+
+angular injectera automatiquement le service demandé a la création
+du composant:
+	c'est ce qu'on appelle communément "l'injection de dépendances"
+	c'est un concept que l'on retrouvera dans spring entre autre
+	
+c'est pour cela qu'un service est déclaré avec le decorateur @injectable
+
+------------------
+si des composants on besoin de communiquer entre eux
+	-> uniquement entre parent et enfant
+	parent -> enfant : [prop]="valeur"
+	le composant défini la propriété avec @Input
+	le parent peut alors lier un de ses attributs ou variable
+	en utilisant [prop] sur la balise du sous composant
+	
+	attention: si le composant enfant veut être prévenu de changement
+	de la valeur en cours d'execution: implementer OnChange
+	
+	enfant -> parent : (event)="function($event)"
+	dans ce sens, l'enfant emet un evenement vers son parent
+	un peut comme par exemple un bouton peut emettre 'click' ou 'hover'
+	dans le composant enfant, déclaration d'un EventEmiter<donnee>
+	et decoration avec @Output
+	
+	attention '$event' est un "mot clé" et pas un choix arbitraire
+	
+-------------------
+autres détails
+	si on veut installer des dependances ou librairies supplementaires
+	exemple : bootstrap
+		-> #npm install --save nom_librairie
+		le --save indique de mettre a jour le package.json
+		en plus de telecharger la dépendances
+	si vous avez a inclure un ficher css ou js supplementaires
+	il faut editer le fichier angular.json, et dedans style ou script
+	
+pourquoi: angular-cli "package" votre application avec webpack
+sous la forme d'un enorme fichier js, et a donc besoin de savoir
+quoi intégrer dedans.
+
+
+	autre piege, des que l'on utilis ngModel pour les formulaires
+	ne pas oublier d'import dans app.module le FormsModule d'angular
+		-> import de la classe
+		-> ajout dans le tableau imports[...]
+		
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+	
