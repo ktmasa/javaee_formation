@@ -1,0 +1,29 @@
+<form>
+    <input type="hidden" name="id" id ="id" [(ngModel)]="currentLivre.id" />
+    <div class="form-group">
+      <label>titre</label>
+      <input type="text"
+             class="form-control"
+             name="titre"
+             id="titre"
+             [(ngModel)]="currentLivre.titre" />
+    </div>
+    <div class="form-group">
+      <label>auteur</label>
+      <input type="text"
+             class="form-control"
+             name="auteur"
+             id="auteur"
+             [(ngModel)]="currentLivre.auteur" />
+    </div>
+    <div class="form-group">
+      <label>prix</label>
+      <input type="text"
+             class="form-control"
+             name="prix"
+             id="prix"
+             [(ngModel)]="currentLivre.prix" />
+    </div>
+    <button class="btn btn-warning" (click)="cancelLivre()" >annuler</button>
+    <button class="btn btn-success" (click)="saveLivre()">sauver</button>
+  </form>

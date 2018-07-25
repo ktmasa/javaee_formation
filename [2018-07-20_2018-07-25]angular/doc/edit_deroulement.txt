@@ -1,0 +1,14 @@
+click edit (dans la liste)
+	-> editLivre(id) (dans la liste)
+	
+	--> @input EditLivreComponent	(dans le composant edit)
+		--> ngOnChange (detection id a changer)
+			Livrerepository.findById(id)
+					---> http get 
+					AJAX/asynchrone
+					--->response
+				.subscribe( response (livre))
+	currentLivre <--- livre
+	
+	
+				
