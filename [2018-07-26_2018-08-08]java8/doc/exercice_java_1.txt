@@ -1,13 +1,17 @@
 exercices de base:
 
 exercice 1: [*-----]
-	saisir des notes, afficher:
+	saisir des notes (jusqu'a saisir -1 ou choisir nb notes), afficher:
 		moyenne, max et min
 		
 exercice 2: [*-----]
 	deviner un chiffre entre 0 et 50
 	-> avec 7 essais
-	aide: Math.random(50) -> tire un nombre entre 1 et 50
+	aide: Math.random() entre 0.0 et 1.0 -> tire un nombre entre 1 et 50
+	ou
+		Random rd = new Random();
+		int nb = rd.nextint(50); -> entre 0 et 50
+	plus petit, plus grand....
 	
 exercice 3: [**---]
 	saisir un texte
