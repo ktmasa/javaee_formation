@@ -1,0 +1,26 @@
+exercices de base:
+
+exercice 1: [*-----]
+	saisir des notes, afficher:
+		moyenne, max et min
+		
+exercice 2: [*-----]
+	deviner un chiffre entre 0 et 50
+	-> avec 7 essais
+	aide: Math.random(50) -> tire un nombre entre 1 et 50
+	
+exercice 3: [**---]
+	saisir un texte
+	afficher le mot le plus long de ce texte
+	
+exercice 4: [**---]
+	dessiner triangle d'une taille spécifiée
+	
+exercice 5: [****-]
+	saisir du code(texte). verifier que les ({[]}) sont bien ouvert
+	et fermé dans le bon ordre a la fin du texte
+	{kggh[jkhjhk{(hjh)[lk]}]} -> ok
+	(kljlk[)] --> pas ok
+	(kjhkjh(lkljk --> pas ok
+	
+	on va dire: gestion de 10 niveau imbrication maximum
