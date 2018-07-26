@@ -32,4 +32,17 @@ export class LivreEditComponent implements OnInit, OnChanges {
                           });
     }
   }
+
+  public saveLivre() {
+    if (this.currentLivre.id > 0){
+      let livreToSave = new Livre(0,"","",0);
+      
+      // retransformation du modele/json du formulaire
+      // en veritable objet Livre avec ses méthodes
+      livreToSave.copyFrom(this.currentLivre);
+
+      this.livreRepository.updateLivre(livreToSave);
+      this.currentLivre = new Livre(0, "rien", "aucun", 10.0);
+    }
+  }
 }

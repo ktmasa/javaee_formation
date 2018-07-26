@@ -19,10 +19,10 @@
       "prix": 15.99
     },
     {
-      "id": 5,
       "titre": "css feng shui",
-      "auteur": "krilin",
-      "prix": 39.99
+      "auteur": "krilin san",
+      "prix": "49.99",
+      "id": 5
     },
     {
       "titre": "sql shaolin",

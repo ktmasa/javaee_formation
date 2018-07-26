@@ -40,4 +40,12 @@ export class LivreRepositoryService {
                this.refreshListe();
              });
   }
+
+  public updateLivre(livre : Livre) : void {
+    this.http.put(`http://localhost:3000/livres/${livre.id}`,
+                  livre.toJson())
+              .subscribe( resp => {
+                this.refreshListe();
+              });
+  }
 }
