@@ -1,0 +1,79 @@
+java 8
+--------
+
+java langage objet "classique"
+ sun -> oracle
+ 
+jdk -> java dev kit (java ee)
+
+jvm -> java virtual machine
+	java n'est pas "compilé" en code natif de la plate-forme
+	
+	beaucoup de langage récent ne sont pas compilé en natif
+	comme le serais C ou C++ par exemple
+	
+	- langage compilé en natif
+	- langage compilé en vm (java, c#, autres...)
+	- langage interprété (pyhton, javascript...)
+	
+a l'epoque ou java a été créer, c'était plus rare de ne pas avoir de
+langage natif
+	-> java avait pour but d'etre "executable" sur toutes les
+	plate-forme possible
+		compile once, run everywhere
+installation du JRE -> java runtime environnement
+	nécéssaire a l'execution de java
+	
+le but original, java langage application multi-plateforme
+a echouer, par contre, java s'est installé en force coté serveur
+java-ee , serveur application/web
+
+	java version:
+		1.0, 1.1,... 1.8 (java 8 -> 1.8)
+		java 6, debut année 2000
+		java 7 -> introduction switch chaine string, excepetion
+		java 8 -> stream, lambda, nouvelles date, etc..
+		
+	actuellement, cycle de release rapide java
+	java 10, mais pas de changement aussi important
+		-> java 9, nouveau systeme de module
+	
+dans le jdk:
+	-> java -> runtime, execution programme java
+	-> javac -> compilateur (Produit.java -> Produit.class)
+	-> jar -> packager des classes ensemble
+	
+on travaille en général avec un IDE
+	Eclipse (majoritaire en entreprise)
+	Netbeans (officiel de sun)
+	Intellij (société tierce)
+	
+eclipse a l'origine, c'est IBM
+	maintenant, c'est open-source et gérer par une fondation
+	
+-----------------------------------
+autres outils courant
+	-> maven (build system de java)
+	-> (ant -> ancienne version du build system)
+eclipse integre maven
+
+-------------------------------------
+quand on parle de javaEE (enterprise edition), c'est
+par rapport a javase (standard edition)
+	-> librairie/api en plus
+	
+il y eu d'autres version:
+	javame -> mobile edition (pour les telephone mobile)
+	javame est plus ou moins mort -> android
+	javacard -> java sur carte a puce
+	
+
+
+
+
+	
+	
+		
+
+
+
