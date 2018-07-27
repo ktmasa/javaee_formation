@@ -1,0 +1,16 @@
+debut projet fil rouge LONCOTO
+-------------------------------
+
+A) mettre en place environnement travail
+B) commencer a se découper/répartir le travail
+
+C) -> réflechir sur votre modele de donnée
+		exemple:
+			y'a quoi dans un article
+			qu'est ce qu'une intervention
+			etc.
+D) -> prototyper certaine partie des modeles via json-server
+E) -> prototyper interface/web avec ces modeles
+
+
+

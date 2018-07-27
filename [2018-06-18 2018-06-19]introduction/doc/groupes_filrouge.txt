@@ -7,19 +7,19 @@ groupe A:
 	
 groupe B:
 	- masataka
-	- nicolas
-	- magda
+	- nabil
+	- anive gervais
+	
 	
 groupe C:
+	- nicolas
+	- magda
+	- francois
+	
+groupe D:
 	- olivier
 	- karima
 	- rachid
 	
-groupe D:
-	- francois
-	- nabil
-	- anive gervais
-	
-modifiable par la suite
 
 
