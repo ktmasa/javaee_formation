@@ -9,8 +9,7 @@ exercice 2: [*-----]
 	-> avec 7 essais
 	aide: Math.random() entre 0.0 et 1.0 -> tire un nombre entre 1 et 50
 	ou
-		Random rd = new Random();
-		int nb = rd.nextint(50); -> entre 0 et 50
+		0 -> entre 0 et 50
 	plus petit, plus grand....
 	
 exercice 3: [**---]
@@ -19,6 +18,12 @@ exercice 3: [**---]
 	
 exercice 4: [**---]
 	dessiner triangle d'une taille spécifiée
+	exemple taille=5
+	*****
+	*--*
+	*-*
+	**
+	*
 	
 exercice 5: [****-]
 	saisir du code(texte). verifier que les ({[]}) sont bien ouvert
