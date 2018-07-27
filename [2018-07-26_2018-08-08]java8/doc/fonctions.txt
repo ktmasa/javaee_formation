@@ -1,0 +1,38 @@
+fonctions en java
+---------------------
+une fonction est un bloc de code réutilisable
+auquel on peut passer des arguments en parametre
+et qui potentiellement peut nous renvoyer une valeur
+
+exemple : -> length(chaine) -> longeur de chaine
+			 sqrt(valeur) -> racine carré
+			 affiche(message)
+			 
+quand on declare une fonction en java
+	
+[type retour] [nom fonction]([type argname, type2 argname2,...]) {
+	code...
+}
+
+en java, les fonctions on OBLIGATOIREMENT un type de retour
+	si la fonction ne renvoie rien, il y a le type special void
+	
+tout est typé, y compris les arguments de la fonction
+
+double racineCarre(double x) {
+	...
+	return resultat;
+}
+
+
+les arguments d'une fonction ne sont pas "optionels"
+
+le nom d'une fonction (plus classe), plus ses arguments (types et ordre de ceux-ci)
+sont ce qu'on appelle la signature d'une fonction
+
+vous ne pouvez pas avoir deux fonctions avec une signature identique
+
+les variables locales déclarée dans une fonction ne sont sont visible
+que depuis celle-ci
+
+
