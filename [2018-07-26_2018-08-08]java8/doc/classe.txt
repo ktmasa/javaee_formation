@@ -1,0 +1,32 @@
+objet en java
+----------------------
+le langage java est un langage objet, a base de classe, et heritage simple
+
+qu'est ce qu'une classe
+	-> plan de fabrication d'un objet
+	
+		-> attributs (etat d'un objet)
+		-> methodes (operations d'un objet)
+		
+en java, tout est objet à l'exception des 8 types minuscule basique.
+
+une classe en java se définit ave cle mot clé class
+	-> quelques regles à respecter
+		1) en java, les classes commencent par une majuscule
+		2) chaque classe est dans son propre fichier source QUI A LE
+		MEME NOM QUE lA CLASSE
+		3) les regles de nommage sont les même que pour les variables
+		4) les classes sont en général placées dans des package. Ceux
+		ci permettent d'organiser vos classes, d'eviter les conflit
+		de nom entre classe en provenance de différente librairie
+		le nom du package + le nom classe -> nom pleinement qualifié de
+		la classe
+		
+	
+creer une classe Livre avec id, titre, auteur, nbPages
+	avec constructeur et accesseur, controle sur le nbpage (0 < 1000)
+	et une méthode d'affichage
+	
+
+
+
