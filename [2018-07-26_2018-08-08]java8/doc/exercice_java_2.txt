@@ -1,0 +1,49 @@
+Exercice java 2
+---------------------
+
+A) one for me, one for you [*-------]
+
+fonction qui prend un nom en parametre
+et qui affiche:
+	one for 'nom', one for me
+	
+B) une fonction qui étant donnée votre age en année
+	vous donne votre age en equivalent année des différentes
+	planetes du systeme solaire [*--------]
+	
+C) reproduire la chanson: (un parametre 'chaine') [*----------]
+si 'chaine' = 'bouteille de biere'
+		99 bouteille de biere pour moi, 1 bouteille tombe
+		98 bouteille.....
+		plus de bouteille de biere
+		
+D) ecrire une fonction qui prend en parametre un chaine de caractere
+représentant une matrice (valeur séparé par des espaces, et ligne par
+retour a la ligne)
+	et renvoyéer le tableau avec ligne/colonne correctement rempli
+	on ne gere que les tableau bi-dimensionels
+	[**--------]
+	
+E) ecrire une fonction qui prend un chiffre en parametre, et
+qui l'ecris en texte 'naturel' (jusqu'a 999)
+	53 -> cinquante trois
+	[****------]
+
+F) ecrire une fonction qui convertit une temperature d'une unité dans toutes
+les autres [**-------]
+	-> '45C' -> celsius, kelvin, farheneit
+	-> '45F'
+	-> '45K'
+	
+G) le morpion, en mode texte 
+	[****----] sans l'ordinateur qui joue
+	[*******-] avec l'ordinateur qui joue
+	
+
+	
+
+
+
+
+
+

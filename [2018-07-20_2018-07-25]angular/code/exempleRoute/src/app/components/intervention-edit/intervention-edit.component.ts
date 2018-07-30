@@ -7,12 +7,12 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ['./intervention-edit.component.css']
 })
 export class InterventionEditComponent implements OnInit {
-  public editId : number;
+  public editId: number;
 
-  constructor(private activeRoute : ActivatedRoute) { }
+  constructor(private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.activeRoute.params.subscribe( values => {
+    this.activeRoute.params.subscribe(values => {
       this.editId = parseInt(values["id"]);
     });
   }
