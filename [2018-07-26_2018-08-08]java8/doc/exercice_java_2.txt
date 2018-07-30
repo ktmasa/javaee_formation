@@ -8,18 +8,24 @@ et qui affiche:
 	one for 'nom', one for me
 	
 B) une fonction qui étant donnée votre age en année
-	vous donne votre age en equivalent année des différentes
+	vous affiche votre age en equivalent année (virgule flottante) des différentes
 	planetes du systeme solaire [*--------]
 	
 C) reproduire la chanson: (un parametre 'chaine') [*----------]
 si 'chaine' = 'bouteille de biere'
-		99 bouteille de biere pour moi, 1 bouteille tombe
+		99 bouteille de biere pour moi, 1 bouteille de biere tombe
 		98 bouteille.....
 		plus de bouteille de biere
 		
 D) ecrire une fonction qui prend en parametre un chaine de caractere
 représentant une matrice (valeur séparé par des espaces, et ligne par
 retour a la ligne)
+exemple:		
+	"4 5 2						[[4, 5, 2],[3, -4, 10],[-2, 7, 8]]
+	3 -4 10			----> 
+	-2 7 8"
+
+	vous pouvez utiliser la fonction split() sur les chaines
 	et renvoyéer le tableau avec ligne/colonne correctement rempli
 	on ne gere que les tableau bi-dimensionels
 	[**--------]
