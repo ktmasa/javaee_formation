@@ -38,6 +38,9 @@ les autres [**-------]
 G) le morpion, en mode texte 
 	[****----] sans l'ordinateur qui joue
 	[*******-] avec l'ordinateur qui joue
+
+H) le calendrier, en mode texte
+	[****----]
 	
 
 	
