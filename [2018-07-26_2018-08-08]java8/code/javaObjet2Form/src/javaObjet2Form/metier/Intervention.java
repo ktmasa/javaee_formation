@@ -1,6 +1,11 @@
 package javaObjet2Form.metier;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Intervention {
 	private int id;
@@ -44,7 +49,45 @@ public class Intervention {
 				+ ", dateIntervention=" + dateIntervention + "]";
 	}
 	
+	// methode retournant une ligne de fichier csv contenant les informations de notre intervention
+	public String toCsvLine() {
+		return 	  this.id + "," 
+				+ this.materielSerial + ","
+				+ this.intervenant + ","
+				+ this.dateIntervention;
+	}
+	// instantiation d'une intervention a partir d'une ligne CSV
+	public static Intervention fromCsvLine(String line) {
+		// decoupage par les ','
+		String[] champs = line.split(",");
+		return new Intervention(
+				Integer.parseInt(champs[0]),		// id -> Integer
+				champs[1],							// serialMateriel -> String
+				champs[2],							// intervenant -> String
+				LocalDateTime.parse(champs[3]));	// date -> LoacalDateTime 
+	}
 	
+	// chargement complet d'une liste d'intervention depuis un fichier CSV
+	public static ArrayList<Intervention> loadAllInterventionsFromCSV(String fileName)
+									throws FileNotFoundException {
+		Scanner reader = new Scanner(new File(fileName));
+		ArrayList<Intervention> data = new ArrayList<>();
+		while (reader.hasNextLine()) {
+			data.add(Intervention.fromCsvLine(reader.nextLine()));
+		}
+		reader.close();
+		return data;
+	}
+	
+	// methode a appeler pour sauvegarder une collection d'interventions
+	public static void saveAllInterventionsToCSV(ArrayList<Intervention> data, String fileName) 
+												throws FileNotFoundException {
+		PrintWriter pw = new PrintWriter(fileName);
+		for (Intervention inter : data) {
+			pw.println(inter.toCsvLine());
+		}
+		pw.close();
+	}
 	
 	
 }
