@@ -1,0 +1,13 @@
+Exercice java 3
+-------------------
+ecrire une classe metier Produit(id, nom, prix, poids)
+permettre de sauvegarder/charger une collection de Produit
+dans un fichier csv
+
+bonus:
+	- permettre de saisir un nouveau produit pour l'ajouter a la
+	collection
+	- permettre de supprimer un produit de la collection
+	
+
+	
