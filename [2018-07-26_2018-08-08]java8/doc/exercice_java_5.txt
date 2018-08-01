@@ -2,13 +2,14 @@ exercice java 5
 ----------------------
 modélisation déplacement de pieces de jeu d'echec
 
-classe représentant une piece (couleur et position)
+classe représentant une piece (couleur et position(ligne et colonne))
 les classes représentant les différents types de pieces
 	pion, tour, fou, cavalier....
 	
 une méthode getDeplacementsPossible()
 	-> la liste des case sur lesquels peut se déplacer la piece
-	en question
+	en question :  
+		tour sur a1 -> "a2 a3 a4 a5 a6 a7 a8 b1 c1 d1 e1 f1 g1 h1"
 	
 A) l'echiquier est vide à l'exception de la piece
 
@@ -16,3 +17,4 @@ bonus B) l'echiquier n'est pas vide
 
 extra bonus blague, calculer le mat en 10 coups
 
+affichage
