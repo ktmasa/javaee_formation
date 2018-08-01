@@ -1,0 +1,24 @@
+heritage:
+
+	- en java, heritage simple via le mot clé extends
+	- on peut remplacer une méthode de son parent
+		-> utiliser @Override de préférence pour vérifier
+		ce remplacement
+	- pour chainer vers un constructeur du parent
+		super(...)
+	- idem pour appeler une méthode du parent
+		super.methode(...)
+	- abstract permet de spécifier qu'une classe est abstraite:
+		1) elle ne peut pas être instanciée
+		2) elle peut contenir des méthodes abstraite
+	- une méthode abstraite n'as pas de bloc de code
+		elle est déstinée à être overridé par les classes
+		descendantes
+	- polymorphisme:
+		lors de l'override d'une fonction par une classe enfant
+		java appellera automatiquement la bonne version de la fonction
+		correspondant au veritable type de l'objet
+		Personne p = Employe
+		p.toCsvLine -> version de employe qui est appellée
+	
+	

@@ -30,6 +30,11 @@ public class Employe extends Personne {
 		return super.toCsvLine() + "," + this.poste + "," + this.salaire;
 	}
 
+	@Override
+	public void contacter(String message) {
+		System.out.println("appeler le poste " + poste+ " : " + message);
+	}
+	
 	
 	
 	

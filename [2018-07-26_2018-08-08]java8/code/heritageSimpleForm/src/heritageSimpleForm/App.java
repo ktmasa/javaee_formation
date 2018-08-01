@@ -22,8 +22,8 @@ public class App {
 		// Client extends Personne => Client est une version spéicalisée de Personne
 		//					=> Client est une Personne
 		
-		Personne p1 = new Personne("john", "john", LocalDate.of(1975, 2, 5));
-		System.out.println(p1);
+		//Personne p1 = new Personne("john", "john", LocalDate.of(1975, 2, 5));
+		//System.out.println(p1);
 		
 		// une variable de type Personne peut contenir un Objet de type Client
 		Personne p2 = null;
@@ -35,7 +35,11 @@ public class App {
 					"marcelus@pulp.com");
 		}
 		else {
-			p2 = new Personne("barbare", "conan", LocalDate.of(1965, 10, 5));
+			p2 = new Employe("haddock",
+					"archibald",
+					LocalDate.of(1901, 5, 3),
+					"oenologue",
+					25000);
 		}
 				
 		System.out.println(p2.toString());
@@ -54,6 +58,17 @@ public class App {
 		System.out.println(p3.toCsvLine());
 		
 		
+		Personne[] contacts = {
+		new Employe("milou", "milou", LocalDate.of(1901, 5, 3), "securite", 25.0),
+		new Employe("nestor", "moulinsart", LocalDate.of(1902, 5, 3), "majordome", 250.0),
+		new Client("tournesol", "tryphon", LocalDate.of(1902, 5, 3),15, "tournesol@inventeur.com")
+		};
+		
+		for (Personne p : contacts) {
+			// probleme!!! p.contacter()
+			p.contacter("hello");
+			
+		}
 		
 	}
 

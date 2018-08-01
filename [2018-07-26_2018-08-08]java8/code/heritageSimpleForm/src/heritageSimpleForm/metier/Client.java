@@ -46,6 +46,10 @@ public class Client extends Personne{
 				+ email;*/
 	}
 	
+	@Override
+	public void contacter(String message) {
+		System.out.println("envoie " + message + " à " + email);
+	}
 	
 
 }

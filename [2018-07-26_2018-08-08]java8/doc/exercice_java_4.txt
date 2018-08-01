@@ -1,0 +1,32 @@
+exercice java 4
+----------------
+creer une classe parent Figure (bord, centre)
+une Figure peut etre affichée
+on peut aussi demander sa surface(aire)
+on peut la dimensionner/scaler par un facteur (exemple * 2)
+
+Triangle qui herite de Figure
+Rectangle qui herite de Figure
+
+je veux pouvoir avoir un tableau de Figure, et les afficher
+sans avoir a déterminer si c'est des triangle ou des rectangles
+	idem pour la surface ou le scale
+
+triangle :
+		taille = 5
+		bord ='*'
+		centre = '-'
+*****
+*--*
+*-*
+**
+*
+
+Rectangle :
+		longueur = 6
+		hauteur = 3
+		bord= '#'
+		centre = '.'
+######
+#....#
+######

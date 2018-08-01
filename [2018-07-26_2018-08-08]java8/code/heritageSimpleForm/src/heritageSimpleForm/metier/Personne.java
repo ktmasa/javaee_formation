@@ -2,10 +2,17 @@ package heritageSimpleForm.metier;
 
 import java.time.LocalDate;
 
-public class Personne {
+// une classe abstraite n'a pas vocation a être instantiée
+public abstract class Personne {
 	private String nom;
 	private String prenom;
 	private LocalDate dateNaissance;
+	
+	protected int internalId = 0;
+	
+	
+	// on a le droit de définir des methodes abstraite à l'intérieur 
+	public abstract void contacter(String message);
 	
 	public String getNom() {return nom;}
 	public void setNom(String nom) {this.nom = nom;}
@@ -30,5 +37,8 @@ public class Personne {
 	public String toCsvLine() {
 		return getNom() + "," + getPrenom() + "," + getDateNaissance();
 	}
+	
+	
+	
 
 }
