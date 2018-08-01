@@ -1,6 +1,6 @@
 exercice java 4
 ----------------
-creer une classe parent Figure (bord, centre)
+creer une classe parent Figure (bord: char, centre:char)
 une Figure peut etre affichée
 on peut aussi demander sa surface(aire)
 on peut la dimensionner/scaler par un facteur (exemple * 2)
