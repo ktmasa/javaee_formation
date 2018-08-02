@@ -16,6 +16,12 @@ public class App {
 		Arrays.sort(produits);
 		saveCollectionToCSV("space.csv", produits);
 
+		Intervale i1 = new Intervale(5, 10);
+		System.out.println(i1);
+		for (int i : i1) {
+			System.out.println("i = " + i);
+		}
+		
 	}
 	
 	public static void saveCollectionToCSV(String fileName, CsvWritable[] data) throws FileNotFoundException {
