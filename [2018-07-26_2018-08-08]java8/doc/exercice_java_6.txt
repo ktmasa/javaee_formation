@@ -1,0 +1,18 @@
+exercice java 6
+------------------
+Client(id, nom, prenom, email)
+
+A) je veux pouvoir:
+	1) trier ces clients par nom, puis prenom si non identique
+				dans l'ordre alphabetique
+	
+	2 bonus) 
+		creer une interface JSonWritable avec une fonction
+			String toJson()
+		implementer cette interface dans Client
+		
+B) (plus difficile) j'ai une classe représentant une range d'ip
+	[192.168.1.10 - 192.168.5.40]
+		-> pouvoir enumerer (for :) les adresse ip
+		de cet interval
+
