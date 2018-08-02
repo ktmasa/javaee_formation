@@ -1,0 +1,37 @@
+[
+{ "id": 2,
+"nom": "bob",
+"prenom": "carl",
+"email": "bob@carl.com"
+}
+,
+{ "id": 1,
+"nom": "bob",
+"prenom": "joe",
+"email": "bob@joe.com"
+}
+,
+{ "id": 5,
+"nom": "jean",
+"prenom": "bon",
+"email": "jean@bon.com"
+}
+,
+{ "id": 6,
+"nom": "jean",
+"prenom": "peuplu",
+"email": "jean@peuplu.com"
+}
+,
+{ "id": 4,
+"nom": "xavier",
+"prenom": "fred",
+"email": "xavier@fred.com"
+}
+,
+{ "id": 3,
+"nom": "xavier",
+"prenom": "marc",
+"email": "xavier@marc.com"
+}
+]
