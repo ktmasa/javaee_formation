@@ -1,0 +1,11 @@
+exercice java 7
+----------------
+
+ecrire une classe convertisseur de temperature
+	celcius, farehneit, kelvin
+	
+	-> gerer l'erreur via exception custom
+		1) si l'unité n'est pas valide
+		2) si la temperature n'est pas valide
+	
+	
