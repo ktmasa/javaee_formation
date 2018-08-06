@@ -1,0 +1,15 @@
+exercice java 8
+----------------
+reproduit l'exemple sur les livres avec
+une classe Produit(id, libelle, prix, poids)
+	-> insertion, update, findAll, findOne et delete
+	
+	A) refaire repository et objet metier complet
+	avec menu texte pour gerer les données
+	
+	B 'comme bonus')
+		pouvoir rechercher un produit via son libelle
+		 'lama' -> "steak de lama", "pull en laine de lama"
+		pouvoir rechercher tous les produits avec un prix
+			entre 2 valeurs spécifiées (exemple entre 15 et 25 euros)
+		
