@@ -1,0 +1,5 @@
+exercice java 9 
+-----------------
+ajouter une options/choix exporter en xml a l'exercice 8
+qui exeportera dans un fichier xml la liste des produits
+en utilisant l'api DOM

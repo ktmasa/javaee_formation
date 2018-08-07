@@ -1,11 +1,28 @@
 package com.courtalon.exercice8Form.repositories;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 import com.courtalon.exercice8Form.metier.Produit;
 
@@ -128,5 +145,61 @@ public class ProduitRepository {
 		}
 		return produits;
 	}
+	
+	public void exportToXML(String filename) {
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		try {
+			DocumentBuilder db = dbf.newDocumentBuilder();
+			Document doc = db.newDocument();
+			Element racine = doc.createElement("produits");
+			doc.appendChild(racine);
+			//----------------------
+			List<Produit> produits = findAll();
+			for (Produit p : produits) {
+				racine.appendChild(exportOneProductXml(p, doc));
+			}
+			
+			//------------------------
+			TransformerFactory tfact = TransformerFactory.newInstance();
+			Transformer tf = tfact.newTransformer();
+			
+			DOMSource source = new DOMSource(doc);
+			StreamResult destination = new StreamResult(
+											new FileOutputStream(
+												new File(filename)));
+			
+			tf.setOutputProperty(OutputKeys.INDENT, "yes");
+			tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+			
+			// ecriture
+			tf.transform(source, destination);
+
+			
+			
+		} catch (ParserConfigurationException e) {e.printStackTrace();} 
+		catch (TransformerConfigurationException e) {e.printStackTrace();}
+		catch (FileNotFoundException e) {e.printStackTrace();} 
+		catch (TransformerException e) {e.printStackTrace();}
+	}
+	
+	private Element exportOneProductXml(Produit p, Document doc) {
+		Element prod = doc.createElement("produit");
+		prod.setAttribute("id", "" + p.getId());
+		
+		Element libelle = doc.createElement("libelle");
+		libelle.appendChild(doc.createTextNode(p.getLibelle()));
+		prod.appendChild(libelle);
+		
+		Element prix = doc.createElement("prix");
+		prix.appendChild(doc.createTextNode("" + p.getPrix()));
+		prod.appendChild(prix);
+
+		Element poids = doc.createElement("poids");
+		poids.appendChild(doc.createTextNode("" + p.getPoids()));
+		prod.appendChild(poids);
+		
+		return prod;
+	}
+	
 	
 }

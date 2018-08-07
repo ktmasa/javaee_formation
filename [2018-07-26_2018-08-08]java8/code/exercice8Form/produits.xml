@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<produits>
+    <produit id="1">
+        <libelle>steak de lama</libelle>
+        <prix>29.99</prix>
+        <poids>0.75</poids>
+    </produit>
+    <produit id="2">
+        <libelle>miel des carpathes</libelle>
+        <prix>16.99</prix>
+        <poids>0.8</poids>
+    </produit>
+    <produit id="4">
+        <libelle>steak d'autruche</libelle>
+        <prix>26.99</prix>
+        <poids>0.45</poids>
+    </produit>
+</produits>

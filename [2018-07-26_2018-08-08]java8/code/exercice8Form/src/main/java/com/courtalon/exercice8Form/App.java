@@ -36,6 +36,7 @@ public class App
 	 		   System.out.println(" d) effacer un produit");
 	 		   System.out.println(" c) chercher un produit par libelle");
 	 		   System.out.println(" p) chercher un produit par prix");
+	 		   System.out.println(" x) exporter liste produit en xml");
 	 		   System.out.println(" q) quitter");
 	 		   String choix = sc.nextLine().substring(0, 1).toLowerCase();
 	 		   switch(choix) {
@@ -83,6 +84,10 @@ public class App
 		 			   prods1 = repo.searchByLibelle(searchTerm);
 		 			   for (Produit p : prods1)
 		 				   System.out.println(p);
+		 			   break;
+		 		   case "x":
+		 			   System.out.println("exportation vers produits.xml");
+		 			   repo.exportToXML("produits.xml");
 		 			   break;
 		 		   default:
 		 				System.out.println("choix inconnu");
