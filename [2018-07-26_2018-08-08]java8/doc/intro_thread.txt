@@ -1,0 +1,23 @@
+programmation multithread en java
+-----------------------------------
+
+les machines modernes peuvent executer plusieurs choses
+en même temps: multitaches
+	- plusieurs programmes s'execute en simultané
+	
+c'est géré par le systeme d'exploitation.
+On peut avoir besoin de "parallelisme" a l'intérieur
+d'un même programme.
+
+si on veut avoir plusieurs execution en même temps dans
+un même programme, on utilise ce qu'on appelle des Thread
+
+chaque processus/tache géré par l'OS est isolé des autres
+quand vous voulez avoir plusieurs taches interne qui collaborent
+entre elle, elle ne peuvent pas être isolée
+	- les thread d'un même programme ne sont pas isolé, ils partagent
+	les mêmes variable pour travailler ensemble
+	
+
+en java, la classe Thread permet de creer/manipuler ces threads
+
