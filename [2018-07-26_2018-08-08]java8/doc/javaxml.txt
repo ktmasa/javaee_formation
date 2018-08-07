@@ -1,0 +1,67 @@
+XML
+------------------------
+<data>
+	<produit id="1">
+		<libelle>steak de lama</libelle>
+		<prix>12.99</prix>
+	</produit>
+</data>
+...
+
+XML (extended markup langage)
+est un langage a base de balise ou l'on définit ses propre balise
+son origine vient de SGML
+
+on a :
+	- des balises
+	- du texte/autre contenu entre les balises
+	- potentiellement des attributs sur les balises ouvrantes
+	
+c'est une structure arborescente/hiérarchique
+	le html est un dérivé du xml
+	
+a une époque, on a eu le XHTML, mais maintenant, html5
+le xml a été TRES à la mode
+	fin des années 90 début 2000, le futur était XML
+le XML est toujours très employé, mais il ne s'est pas imposé
+partout
+	-> pour les api WEB XML -> JSON
+	-> document, config, -> beaucoup de xml
+
+point fort du xml:
+	-> completment standardisé
+	-> beaucoup d'outillage puissant
+		parser (lecteur)
+	-> feuille de style/schema xml (extremement puissant)
+			xsd -> xml schema definition
+	-> transformation XML (xslt)
+		transformer un fichier xml en un autre de structure différente
+
+point faible du xml:
+	-> verbeux
+	-> pas forcement ultra lisible pour un etre humain
+	
+en java
+----------
+	on a 2 grandes API pour interagir avec le XML
+	-> parser SAX (simple asynchronous XML)
+	-> parser DOM (Document Object Model)
+	
+	DOM: representation du contenu XML sous forme d'objets
+		-> très puissant, relative aisée de manipulation
+		-> lourd en resource
+		-> ca ne marche que sur des documents complets
+		
+	SAX: lecture du xml au fur et a mesure
+		-> pas de représentation en memoire
+		-> ultra-légér, pas besoin du document completment
+		-> a vous d'ecrire la logique de vos manipulations
+		
+	en JAVA, le parser DOM utilise le parser SAX en sous jacent
+
+	
+	
+	
+		
+
+

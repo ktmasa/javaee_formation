@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<livres>
+    <livre id="1">
+        <titre>2000 lieux sous les mers</titre>
+    </livre>
+    <livre id="2">
+        <titre>de la terre a la lune</titre>
+    </livre>
+</livres>
