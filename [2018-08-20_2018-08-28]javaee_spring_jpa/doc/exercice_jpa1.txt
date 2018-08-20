@@ -1,0 +1,25 @@
+exercice JPA 1
+-----------------
+
+creer un projet JPA avec une entité métier Livre
+
+	Livre
+	------
+	id				int
+	titre
+	isbn
+	nbPages			int
+	prix			double
+	
+	
+mettre en place la mapping avec les annotations
+		en modifiant la table pour qu'elle s'appelle : books
+		de même, l'isbn a une longeur de 40 caractere max
+		
+inserer quelques livres
+afficher via une requete JPA
+tous les livres de prix supérieur a une valeur saisie
+
+
+	
+
