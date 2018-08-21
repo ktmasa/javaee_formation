@@ -1,0 +1,45 @@
+exercice jpa 3: association N-N
+
+modeliser avec un mapping une université
+
+Etudiant
+---------
+id
+nom
+prenom
+email
+
+Professeur
+----------
+id
+nom
+prenom
+salaire
+
+Cours
+-----------
+id
+libelle
+dateDebut
+capaciteMax (int)
+
+Matiere
+-----------
+id
+libelle
+
+Etudiant n)-----(n Cours n)------(1 Professeur
+Cours n)------(1 Matiere
+
+
+etape 1 : le mapping
+etape 2 : insérer des données 
+
+etape 3) requetage
+1) lister les etudiants
+2) lister les cours avec leur matiere et professeur
+3) lister les cours et combien d'etudiant y participe
+
+
+
+
