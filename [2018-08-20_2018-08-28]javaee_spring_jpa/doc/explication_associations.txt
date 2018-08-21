@@ -1,0 +1,61 @@
+relations JPA (association)
+---------------------------
+
+1-n (au sens uml)
+
+Article n)----(1 Famille
+
+au sens SQL -> une clé étrangère du coté N
+dans Article -> familleId --> vers une ligne dans la table famille
+
+mais en objet, ce n'est pas le même principe
+
+mon Objet Article peut avoir directement une réference vers un 
+objet Famille
+
+Article [id, nom,..., [@famille]]
+						   |
+						   +--------> Famille(id, libelle...)
+						   |
+Article [id, nom,..., [@famille]]
+						   
+en JPA, quand vous voulez représenter cela, on utilise @ManyToOne
+devant la propriété famille
+	-> ce n'est pas une donnée "simple", mais une référence
+	vers une autre entité
+	-> quand on requetera un Article, il sera alors
+	capable de requeter automatiquement la famille associée
+	
+si on a besoin de naviguer de la famille vers les articles
+	je peu spécifier une relation "inverse", @OneToMany
+	mais ATTENTION, il faut alors lui indiquer de quel
+	relation ManyToOne il est le mirroir/symétrique
+	c'est une simple "facilité" qui n'as pas d'impact sur la bdd
+	le coté mappedBy n'a aucun effet en sauvegarde sur la base
+	mappedBy dénote l'attribut dont il est le mirroir, pas la classe
+	ou entité
+	
+Enfin:
+	deux parametrage supplémentaire pour ces associations:
+		-> fetch ( EAGER | LAZY)
+			chargement enthousiaste ou paresseur
+			il précharge l'objet associé ou il attent le dernier moment
+			vers du N -> par defaut LAZY
+			vers du 1 -> par defaut EAGER
+		-> cascade 
+			propagation via l'association d'evenement comme
+				l'insertion, l'effacement, le merge, etc....
+			si je persist un Article qui référence une famille
+			non persistée, celle-ci le sera automatiquement
+			si une cascade de persistence est mise en place
+			(sinon erreur)
+			a manier avec précaution, ne les mettre que si indispensable
+	
+	si vous avez besoin de choisir un nom particulier par la
+	colonne clef étrangere -> @JoinColumn (devant manyToOne)
+	
+
+	
+		
+
+

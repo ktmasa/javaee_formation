@@ -1,5 +1,7 @@
 package com.courtalon.referentielarticlejpaform.beans;
 
+import java.util.Date;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +24,8 @@ public class Article {
 	@Id										private int id;
 											private String nom;
 											private double prix;
+	@Temporal(TemporalType.DATE)			private Date dateCreation;
+											
 	// n -> 1
 	// JoinColumn permet de modifier la clé etrangère par défaut
 	// par exemple son nom 

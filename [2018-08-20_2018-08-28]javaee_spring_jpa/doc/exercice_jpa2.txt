@@ -1,0 +1,33 @@
+exercice jpa 2
+----------------
+Post n)----(1 Auteur
+Post n)----(1 Categorie
+
+inserer 2~3 auteurs
+inserer 2~3 categories
+et une dizaines de post associés
+
+pouvoir lister les post avec leur auteurs
+pouvoir lister touts les posts d'une categorie
+
+Post
+-------
+id
+titre
+corps
+dateCreation (date)
+
+Auteur
+-------
+id
+nom
+prenom
+email
+
+Categorie
+----------
+id
+libelle
+
+
+
