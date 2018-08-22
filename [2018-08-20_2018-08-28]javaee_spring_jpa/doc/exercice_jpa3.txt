@@ -38,7 +38,7 @@ etape 2 : insérer des données
 etape 3) requetage
 1) lister les etudiants
 2) lister les cours avec leur matiere et professeur
-3) lister les cours et combien d'etudiant y participe
+3) lister les libelle des cours et combien d'etudiant y participe
 
 
 
