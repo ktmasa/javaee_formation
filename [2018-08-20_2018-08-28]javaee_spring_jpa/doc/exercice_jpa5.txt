@@ -1,0 +1,6 @@
+Personne
+----------
+id
+nom
+dateNaissance (LocalDate)
+(transient) -> age int
