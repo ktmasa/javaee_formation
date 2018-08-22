@@ -1,0 +1,32 @@
+exercice jpa 4 - heritage
+--------------------------
+
+Contenu
+-------
+id
+nom
+dateCreation
+dateEdition
+
+Image : Contenu
+-----------
+fileName	String
+typeImage 	String
+
+DocumentPDF: Contenu
+--------------------
+titre
+nomAuteur
+
+Galerie : Contenu
+-------------------
+titre
+
+
+Galerie 1)------(n Image
+
+A) ecrire le mapping jpa avec heritage
+B) bonus, effectuer quelques requetes
+
+
+
