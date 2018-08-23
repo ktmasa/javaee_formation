@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+          http://www.springframework.org/schema/aop 
+            http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+          http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util-4.0.xsd
+            http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+           http://www.springframework.org/schema/mvc
+			http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd"
+			default-autowire="byName">
+
+<bean id="msg1" class="com.courtalon.premierSpringform.beans.Message">
+	<property name="titre" value="bonjour" />
+	<property name="corps" value="bienvenue dans le monde de spring!"/>
+</bean>
+
+
+<bean id="merlin" class="com.courtalon.premierSpringform.beans.Merlin">
+	<property name="libelleQuetes">
+		<list>
+			<value>sauver la dame du lac</value>
+			<value>trucider le dragon</value>
+			<value>trouver le tresor du dongeon</value>
+			<value>ramener le graal</value>
+			<value>compter les pierres du chateau</value>
+		</list>
+	</property>
+</bean>
+
+<bean id="fournisseurQuete" class="com.courtalon.premierSpringform.beans.Arthur">
+	<constructor-arg value="C:\Users\Stagiaire\eclipse-workspace\premierSpringform\quetes.txt"/>
+</bean>
+
+<!-- le bean perceval à besoin du bean "merlin" pour fonctionner -->
+<bean id="perceval" class="com.courtalon.premierSpringform.beans.Chevalier">
+	<constructor-arg value="Perceval" />
+</bean>
+
+<bean id="caradoc" class="com.courtalon.premierSpringform.beans.Chevalier">
+	<constructor-arg value="Caradoc" />
+	<property name="fournisseurQuete" ref="merlin"/>
+</bean>
+
+<bean id="menestrel" class="com.courtalon.premierSpringform.beans.Menestrel" />
+
+<aop:config>
+	<aop:pointcut
+	 expression="execution(* com.courtalon.premierSpringform.beans.Chevalier.partirEnQuete(..))"
+	 id="pc1"/>
+	<aop:advisor advice-ref="menestrel" pointcut-ref="pc1"/>
+</aop:config>
+
+
+</beans>
