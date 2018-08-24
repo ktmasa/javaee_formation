@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nom</th>
+      <th>famille</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articlesSubject | async">
+      <td>{{article.id}}</td>
+      <td>{{article.nom}}</td>
+      <td>{{article.famille.libelle}}</td>
+    </tr>
+  </tbody>
+</table>
