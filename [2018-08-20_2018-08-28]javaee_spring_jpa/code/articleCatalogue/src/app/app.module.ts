@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
-
+import { PaginationModule } from "ngx-bootstrap/pagination";
 import { AppComponent } from './app.component';
 import { ArticleListeComponent } from './components/article-liste/article-liste.component';
 
@@ -15,7 +15,8 @@ import { ArticleListeComponent } from './components/article-liste/article-liste.
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    PaginationModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,10 @@ export class ArticleListeComponent implements OnInit {
   // les articles
   public articlesSubject : Subject<Article[]>;
   private articlesSouscription : Subscription;
+  // pagination
+  public totalItems : number;
+  public currentPage : number;
+  public taillePage : number;
 
   constructor(private articleRepository: ArticleRepositoryService) {
     // pour le NgFor
@@ -25,7 +29,15 @@ export class ArticleListeComponent implements OnInit {
                                       // je recois les nouvelles pages d'articles
                                       // je transmet au ngFor le tableau des articles
                                       this.articlesSubject.next(p.content);
+                                      this.totalItems = p.totalElements;
+                                      this.currentPage = p.number + 1;
+                                      this.taillePage = p.size;
                                     });
+    this.articleRepository.refreshListe();
   }
+
+    public pageChanged(event) {
+      this.articleRepository.setNoPage(event.page - 1);
+    }
 
 }
