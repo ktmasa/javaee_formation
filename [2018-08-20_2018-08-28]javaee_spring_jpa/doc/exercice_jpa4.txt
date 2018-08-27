@@ -22,7 +22,6 @@ Galerie : Contenu
 -------------------
 titre
 
-
 Galerie 1)------(n Image
 
 A) ecrire le mapping jpa avec heritage

@@ -1,0 +1,25 @@
+gestion des données binaires
+------------------------------
+gestion de blob (fichier image, document, etc...)
+	1) comment les stocker ?
+	2) comment les echanger avec le front
+		A) upload
+		B) le download
+		
+1) comment les stocker
+	A) on peut les stocker directement dans le systeme de fichier
+		un repertoire, et le stocker dedans
+	B) stocker dans un serveur
+		- notre base de donnée (BLOB dans mysql)
+		- dans une solution -> mongodb gridfs par exemple
+		
+	
+illustration, on va faire la solution A
+	un mecanisme pour pouvaoir copier le fichier dans le
+	repertoire, et un pour le retrouver
+
+	A) stocker dans un repertoire "privé"
+	B) générer nos propres nom de fichier
+		generer un nom de fichier aleatoire
+		utiliser un calcul autre --> par exemple SHA2
+	
