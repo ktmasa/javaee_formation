@@ -31,6 +31,9 @@ Spring:
 @requestMapping -> mapping url -> methode
 	@ResponseBody, @PathVariable, etc...
 	
+@CrossOrigin -> gerer la sécurité cross request -> autoriser les requette ajax d'un autre domaine
+
+@JsonIgnore -> ignorer un champ pour sérialisation json
 
 
 

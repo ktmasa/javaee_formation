@@ -1,0 +1,10 @@
+spring security
+------------------
+	-> gestion de l'authentification
+	-> gestion des authorisations
+	
+authentification -> déterminer qui vous etes (login)
+authorisation -> quels sont vos droit d'accès
+			-> par url, par methode
+			
+gestion "intégrée" et extensible des comptes utilisateurs
