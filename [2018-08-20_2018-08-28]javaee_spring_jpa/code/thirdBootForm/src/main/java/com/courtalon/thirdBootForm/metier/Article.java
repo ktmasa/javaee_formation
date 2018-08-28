@@ -1,11 +1,13 @@
 package com.courtalon.thirdBootForm.metier;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import lombok.Getter;
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter @Setter @NoArgsConstructor @ToString(exclude= {"famille"})
+@Getter @Setter @NoArgsConstructor @ToString(exclude= {"famille", "tags"})
 @Entity
 public class Article {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -22,6 +24,7 @@ public class Article {
 								private String marque;
 								private LocalDate dateCreation;
 	@ManyToOne					private Famille famille;
+	@ManyToMany					private Set<Tag> tags;
 	
 	
 	

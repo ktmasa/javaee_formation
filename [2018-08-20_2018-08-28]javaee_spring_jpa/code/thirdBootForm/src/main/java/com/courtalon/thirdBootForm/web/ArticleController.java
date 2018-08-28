@@ -12,6 +12,7 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -74,4 +75,14 @@ public class ArticleController {
 		return pageLight;
 		
 	}
+	
+	
+	@RequestMapping(value="/famille/{fid:[0-9]+}", method=RequestMethod.GET,
+					produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@ResponseBody
+	@CrossOrigin(origins= {"http://localhost:4200"}, methods= {RequestMethod.GET, RequestMethod.OPTIONS})
+	public Page<Article> findAllByFamille(@PathVariable("fid") int fid,@PageableDefault(page=0, size=5) Pageable pr) {
+		return articleRepository.findByFamille_id(fid, pr);
+	}
+	
 }
