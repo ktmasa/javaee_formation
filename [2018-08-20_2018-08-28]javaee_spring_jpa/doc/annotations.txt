@@ -1,0 +1,38 @@
+les annotations
+----------------------
+
+JPA:
+@Entity
+@Table		-> changer tabme
+@inheritance -> héritage
+
+@Id @GeneratedValue	-> clé primaire
+@Column  -> personnaliser colonne
+
+@ManyToMany, @ManyToOne, @OneToMany	-> associations
+	mappedBy, fetch, cascade
+
+@Transient -> ignorer colonne
+
+@Embedded, @Embeddable -> inclusions
+
+Spring:
+@Autowired -> injection
+
+@Controller -> controleur MVC
+@Component, @Service -> bean /service spring
+
+@Bean -> methode fournissant un bean
+@Configuration -> classe de configuration
+
+@PersistenceContext -> injection entity manager
+@Transactional -> gestion transaction automoatique
+
+@requestMapping -> mapping url -> methode
+	@ResponseBody, @PathVariable, etc...
+	
+
+
+
+
+
